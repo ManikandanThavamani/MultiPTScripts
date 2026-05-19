@@ -1,0 +1,23 @@
+HTTP/1.1 200 
+Date: Tue, 19 May 2026 04:46:45 GMT
+Content-Type: application/json;charset=UTF-8
+Content-Length: 7352
+Connection: close
+X-Frame-Options: SAMEORIGIN
+Vary: Origin,Accept-Encoding,User-Agent,Access-Control-Request-Method,Access-Control-Request-Headers
+X-Anonymous-Consents: %5B%5D
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
+X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+Set-Cookie: ROUTE=.api-6459448956-kps4g; Path=/; Secure; HttpOnly; SameSite=None
+X-SAP-Pad: 900640
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Headers: origin, x-requested-with, accept, content-type, authorization, X-HTTP-Method-Override, x-cat-user-preferences, X-Cat-API-Tracking-Id, Cache-Control, x-csrf-token, X-Cat-Development, x-cat-ent-application-module
+Access-Control-Max-Age: 3628800
+Access-Control-Allow-Methods: GET, PUT, POST, DELETE, HEAD, PATCH
+Access-Control-Expose-Headers: Location, X-Cat-API-Tracking-Id
+X-Cat-API-Tracking-Id: 9b5fbc13-f633-4e95-8784-44e372666733
+

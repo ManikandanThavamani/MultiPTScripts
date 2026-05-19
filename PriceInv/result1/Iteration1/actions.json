@@ -1,0 +1,20 @@
+[
+    {
+        "actionName": "Action",
+        "steps": [
+            {
+                "stepId": "STEP1",
+                "stepName": "Submit Data: Auth",
+                "infFile": "t1.inf",
+                "time": 1779169547244
+            },
+            {
+                "stepId": "STEP2",
+                "stepName": "Custom Request: ActualPriceAPI",
+                "infFile": "t2.inf",
+                "time": 1779169549202
+            }
+        ],
+        "transactions": []
+    }
+]

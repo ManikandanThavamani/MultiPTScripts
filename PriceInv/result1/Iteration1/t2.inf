@@ -1,0 +1,13 @@
+[t2]
+SnapshotXmlFile=snapshot_2.xml
+ContentType=application/json
+StepName=Custom Request: ActualPriceAPI
+Total=1
+FileName1=t2.json
+RequestHeaderFile=t2_RequestHeader.txt
+ResponseHeaderFile=t2_ResponseHeader.txt
+RawStepEndTime=1779169549180
+RawStepName=ActualPriceAPI
+RequestBodyFile=t2_RequestBody.txt
+RawStepStartTime=1779169547281
+URL1=file:

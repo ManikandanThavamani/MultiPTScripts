@@ -1,0 +1,1371 @@
+<SOAP-ENV:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:clr="http://schemas.microsoft.com/soap/encoding/clr/1.0" SOAP-ENV:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/">
+<SOAP-ENV:Body>
+<a1:TSLASupervisor id="ref-1" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/SLASupervisor/Analysis.SLA">
+<m_SLARulesInfos href="#ref-5"/>
+<m_TrackingPeriodType>Default</m_TrackingPeriodType>
+<m_TrackingPeriodValue>0</m_TrackingPeriodValue>
+<m_TrackingPeriodTimeScale>NoTime</m_TrackingPeriodTimeScale>
+<m_TrackingPeriodValueInSec>5</m_TrackingPeriodValueInSec>
+<m_DataProvider href="#ref-6"/>
+</a1:TSLASupervisor>
+<a2:ArrayList id="ref-5" xmlns:a2="http://schemas.microsoft.com/clr/ns/System.Collections">
+<_items href="#ref-7"/>
+<_size>4</_size>
+<_version>4</_version>
+</a2:ArrayList>
+<a5:TSLADataProvider id="ref-6" xmlns:a5="http://schemas.microsoft.com/clr/nsassem/SLADataProvider/Analysis.SLA">
+</a5:TSLADataProvider>
+<SOAP-ENC:Array id="ref-7" SOAP-ENC:arrayType="xsd:anyType[4]">
+<item href="#ref-8"/>
+<item href="#ref-9"/>
+<item href="#ref-10"/>
+<item href="#ref-11"/>
+</SOAP-ENC:Array>
+<a7:SLARuleInfo id="ref-8" xmlns:a7="http://schemas.microsoft.com/clr/nsassem/SLARules/Analysis.SLA">
+<m_RuleDef href="#ref-12"/>
+<m_RuleData href="#ref-13"/>
+<m_RuleResult href="#ref-14"/>
+<m_strId>passed_transactions_ratio</m_strId>
+<m_IsValid>true</m_IsValid>
+<m_PrimaryException xsi:null="1"/>
+</a7:SLARuleInfo>
+<a7:SLARuleInfo id="ref-9" xmlns:a7="http://schemas.microsoft.com/clr/nsassem/SLARules/Analysis.SLA">
+<m_RuleDef href="#ref-15"/>
+<m_RuleData href="#ref-16"/>
+<m_RuleResult href="#ref-17"/>
+<m_strId>transaction_response_time_Action_Transaction</m_strId>
+<m_IsValid>true</m_IsValid>
+<m_PrimaryException xsi:null="1"/>
+</a7:SLARuleInfo>
+<a7:SLARuleInfo id="ref-10" xmlns:a7="http://schemas.microsoft.com/clr/nsassem/SLARules/Analysis.SLA">
+<m_RuleDef href="#ref-18"/>
+<m_RuleData href="#ref-19"/>
+<m_RuleResult href="#ref-20"/>
+<m_strId>transaction_response_time_vuser_end_Transaction</m_strId>
+<m_IsValid>true</m_IsValid>
+<m_PrimaryException xsi:null="1"/>
+</a7:SLARuleInfo>
+<a7:SLARuleInfo id="ref-11" xmlns:a7="http://schemas.microsoft.com/clr/nsassem/SLARules/Analysis.SLA">
+<m_RuleDef href="#ref-21"/>
+<m_RuleData href="#ref-22"/>
+<m_RuleResult href="#ref-23"/>
+<m_strId>transaction_response_time_vuser_init_Transaction</m_strId>
+<m_IsValid>true</m_IsValid>
+<m_PrimaryException xsi:null="1"/>
+</a7:SLARuleInfo>
+<a7:SLASimpleRuleDef id="ref-12" xmlns:a7="http://schemas.microsoft.com/clr/nsassem/SLARules/Analysis.SLA">
+<m_GoalValue>90</m_GoalValue>
+<m_AggFunction>Total</m_AggFunction>
+<m_RuleName>passed_transactions_ratio</m_RuleName>
+<m_RuleUIName>Passed Transactions Ratio</m_RuleUIName>
+<m_Measurement>passed_transactions_ratio</m_Measurement>
+<m_CalcDirection>greater_than_equal</m_CalcDirection>
+<SLARuleDefWithCalcDirection_x002B_m_RuleName>passed_transactions_ratio</SLARuleDefWithCalcDirection_x002B_m_RuleName>
+<SLARuleDefWithCalcDirection_x002B_m_RuleUIName>Passed Transactions Ratio</SLARuleDefWithCalcDirection_x002B_m_RuleUIName>
+<SLARuleDefWithCalcDirection_x002B_m_Measurement>passed_transactions_ratio</SLARuleDefWithCalcDirection_x002B_m_Measurement>
+<SLARuleDefWithCalcDirection_x002B_m_CalcDirection>greater_than_equal</SLARuleDefWithCalcDirection_x002B_m_CalcDirection>
+<SLARuleDef_x002B_m_RuleName>passed_transactions_ratio</SLARuleDef_x002B_m_RuleName>
+<SLARuleDef_x002B_m_RuleUIName>Passed Transactions Ratio</SLARuleDef_x002B_m_RuleUIName>
+<SLARuleDef_x002B_m_Measurement>passed_transactions_ratio</SLARuleDef_x002B_m_Measurement>
+<SLARuleDef_x002B_m_CalcDirection>greater_than_equal</SLARuleDef_x002B_m_CalcDirection>
+</a7:SLASimpleRuleDef>
+<a7:SimpleRuleData id="ref-13" xmlns:a7="http://schemas.microsoft.com/clr/nsassem/SLARules/Analysis.SLA">
+<m_RealValue>100</m_RealValue>
+</a7:SimpleRuleData>
+<a7:SLASimpleRuleResult id="ref-14" xmlns:a7="http://schemas.microsoft.com/clr/nsassem/SLARules/Analysis.SLA">
+<m_Status>rulesStatusOK</m_Status>
+<m_RealValue>100</m_RealValue>
+<m_GoalValue>90</m_GoalValue>
+</a7:SLASimpleRuleResult>
+<a7:SLAComplexLoadRuleDef id="ref-15" xmlns:a7="http://schemas.microsoft.com/clr/nsassem/SLARules/Analysis.SLA">
+<m_SubMeasurement>Action_Transaction</m_SubMeasurement>
+<m_CriteriaMeasurement>None</m_CriteriaMeasurement>
+<m_CriteriaUIName>None</m_CriteriaUIName>
+<m_ThresholdsContainer href="#ref-24"/>
+<m_RuleName>transaction_response_time_Action_Transaction</m_RuleName>
+<m_RuleUIName>Transaction Response Time (Average)</m_RuleUIName>
+<m_Measurement>transaction_response_time</m_Measurement>
+<m_CalcDirection>less_than_equal</m_CalcDirection>
+<SLALoadRuleDef_x002B_m_CriteriaMeasurement>None</SLALoadRuleDef_x002B_m_CriteriaMeasurement>
+<SLALoadRuleDef_x002B_m_CriteriaUIName>None</SLALoadRuleDef_x002B_m_CriteriaUIName>
+<SLALoadRuleDef_x002B_m_ThresholdsContainer href="#ref-24"/>
+<SLALoadRuleDef_x002B_m_RuleName>transaction_response_time_Action_Transaction</SLALoadRuleDef_x002B_m_RuleName>
+<SLALoadRuleDef_x002B_m_RuleUIName>Transaction Response Time (Average)</SLALoadRuleDef_x002B_m_RuleUIName>
+<SLALoadRuleDef_x002B_m_Measurement>transaction_response_time</SLALoadRuleDef_x002B_m_Measurement>
+<SLALoadRuleDef_x002B_m_CalcDirection>less_than_equal</SLALoadRuleDef_x002B_m_CalcDirection>
+<SLARuleDefWithCalcDirection_x002B_m_RuleName>transaction_response_time_Action_Transaction</SLARuleDefWithCalcDirection_x002B_m_RuleName>
+<SLARuleDefWithCalcDirection_x002B_m_RuleUIName>Transaction Response Time (Average)</SLARuleDefWithCalcDirection_x002B_m_RuleUIName>
+<SLARuleDefWithCalcDirection_x002B_m_Measurement>transaction_response_time</SLARuleDefWithCalcDirection_x002B_m_Measurement>
+<SLARuleDefWithCalcDirection_x002B_m_CalcDirection>less_than_equal</SLARuleDefWithCalcDirection_x002B_m_CalcDirection>
+<SLARuleDef_x002B_m_RuleName>transaction_response_time_Action_Transaction</SLARuleDef_x002B_m_RuleName>
+<SLARuleDef_x002B_m_RuleUIName>Transaction Response Time (Average)</SLARuleDef_x002B_m_RuleUIName>
+<SLARuleDef_x002B_m_Measurement>transaction_response_time</SLARuleDef_x002B_m_Measurement>
+<SLARuleDef_x002B_m_CalcDirection>less_than_equal</SLARuleDef_x002B_m_CalcDirection>
+</a7:SLAComplexLoadRuleDef>
+<a7:ComplexLoadRuleData id="ref-16" xmlns:a7="http://schemas.microsoft.com/clr/nsassem/SLARules/Analysis.SLA">
+<m_SubMsrName>Action_Transaction</m_SubMsrName>
+<m_TrackingPeriodInSec>5</m_TrackingPeriodInSec>
+<m_StartTimeInSec>0</m_StartTimeInSec>
+<m_EndTimeInSec>184</m_EndTimeInSec>
+<LoadRuleData_x002B_m_TrackingPeriodInSec>5</LoadRuleData_x002B_m_TrackingPeriodInSec>
+<LoadRuleData_x002B_m_StartTimeInSec>0</LoadRuleData_x002B_m_StartTimeInSec>
+<LoadRuleData_x002B_m_EndTimeInSec>184</LoadRuleData_x002B_m_EndTimeInSec>
+</a7:ComplexLoadRuleData>
+<a7:SLALoadRuleResult id="ref-17" xmlns:a7="http://schemas.microsoft.com/clr/nsassem/SLARules/Analysis.SLA">
+<m_TimeRangeCollection href="#ref-25"/>
+</a7:SLALoadRuleResult>
+<a7:SLAComplexLoadRuleDef id="ref-18" xmlns:a7="http://schemas.microsoft.com/clr/nsassem/SLARules/Analysis.SLA">
+<m_SubMeasurement>vuser_end_Transaction</m_SubMeasurement>
+<m_CriteriaMeasurement>None</m_CriteriaMeasurement>
+<m_CriteriaUIName>None</m_CriteriaUIName>
+<m_ThresholdsContainer href="#ref-26"/>
+<m_RuleName>transaction_response_time_vuser_end_Transaction</m_RuleName>
+<m_RuleUIName>Transaction Response Time (Average)</m_RuleUIName>
+<m_Measurement>transaction_response_time</m_Measurement>
+<m_CalcDirection>less_than_equal</m_CalcDirection>
+<SLALoadRuleDef_x002B_m_CriteriaMeasurement>None</SLALoadRuleDef_x002B_m_CriteriaMeasurement>
+<SLALoadRuleDef_x002B_m_CriteriaUIName>None</SLALoadRuleDef_x002B_m_CriteriaUIName>
+<SLALoadRuleDef_x002B_m_ThresholdsContainer href="#ref-26"/>
+<SLALoadRuleDef_x002B_m_RuleName>transaction_response_time_vuser_end_Transaction</SLALoadRuleDef_x002B_m_RuleName>
+<SLALoadRuleDef_x002B_m_RuleUIName>Transaction Response Time (Average)</SLALoadRuleDef_x002B_m_RuleUIName>
+<SLALoadRuleDef_x002B_m_Measurement>transaction_response_time</SLALoadRuleDef_x002B_m_Measurement>
+<SLALoadRuleDef_x002B_m_CalcDirection>less_than_equal</SLALoadRuleDef_x002B_m_CalcDirection>
+<SLARuleDefWithCalcDirection_x002B_m_RuleName>transaction_response_time_vuser_end_Transaction</SLARuleDefWithCalcDirection_x002B_m_RuleName>
+<SLARuleDefWithCalcDirection_x002B_m_RuleUIName>Transaction Response Time (Average)</SLARuleDefWithCalcDirection_x002B_m_RuleUIName>
+<SLARuleDefWithCalcDirection_x002B_m_Measurement>transaction_response_time</SLARuleDefWithCalcDirection_x002B_m_Measurement>
+<SLARuleDefWithCalcDirection_x002B_m_CalcDirection>less_than_equal</SLARuleDefWithCalcDirection_x002B_m_CalcDirection>
+<SLARuleDef_x002B_m_RuleName>transaction_response_time_vuser_end_Transaction</SLARuleDef_x002B_m_RuleName>
+<SLARuleDef_x002B_m_RuleUIName>Transaction Response Time (Average)</SLARuleDef_x002B_m_RuleUIName>
+<SLARuleDef_x002B_m_Measurement>transaction_response_time</SLARuleDef_x002B_m_Measurement>
+<SLARuleDef_x002B_m_CalcDirection>less_than_equal</SLARuleDef_x002B_m_CalcDirection>
+</a7:SLAComplexLoadRuleDef>
+<a7:ComplexLoadRuleData id="ref-19" xmlns:a7="http://schemas.microsoft.com/clr/nsassem/SLARules/Analysis.SLA">
+<m_SubMsrName>vuser_end_Transaction</m_SubMsrName>
+<m_TrackingPeriodInSec>5</m_TrackingPeriodInSec>
+<m_StartTimeInSec>0</m_StartTimeInSec>
+<m_EndTimeInSec>184</m_EndTimeInSec>
+<LoadRuleData_x002B_m_TrackingPeriodInSec>5</LoadRuleData_x002B_m_TrackingPeriodInSec>
+<LoadRuleData_x002B_m_StartTimeInSec>0</LoadRuleData_x002B_m_StartTimeInSec>
+<LoadRuleData_x002B_m_EndTimeInSec>184</LoadRuleData_x002B_m_EndTimeInSec>
+</a7:ComplexLoadRuleData>
+<a7:SLALoadRuleResult id="ref-20" xmlns:a7="http://schemas.microsoft.com/clr/nsassem/SLARules/Analysis.SLA">
+<m_TimeRangeCollection href="#ref-27"/>
+</a7:SLALoadRuleResult>
+<a7:SLAComplexLoadRuleDef id="ref-21" xmlns:a7="http://schemas.microsoft.com/clr/nsassem/SLARules/Analysis.SLA">
+<m_SubMeasurement>vuser_init_Transaction</m_SubMeasurement>
+<m_CriteriaMeasurement>None</m_CriteriaMeasurement>
+<m_CriteriaUIName>None</m_CriteriaUIName>
+<m_ThresholdsContainer href="#ref-28"/>
+<m_RuleName>transaction_response_time_vuser_init_Transaction</m_RuleName>
+<m_RuleUIName>Transaction Response Time (Average)</m_RuleUIName>
+<m_Measurement>transaction_response_time</m_Measurement>
+<m_CalcDirection>less_than_equal</m_CalcDirection>
+<SLALoadRuleDef_x002B_m_CriteriaMeasurement>None</SLALoadRuleDef_x002B_m_CriteriaMeasurement>
+<SLALoadRuleDef_x002B_m_CriteriaUIName>None</SLALoadRuleDef_x002B_m_CriteriaUIName>
+<SLALoadRuleDef_x002B_m_ThresholdsContainer href="#ref-28"/>
+<SLALoadRuleDef_x002B_m_RuleName>transaction_response_time_vuser_init_Transaction</SLALoadRuleDef_x002B_m_RuleName>
+<SLALoadRuleDef_x002B_m_RuleUIName>Transaction Response Time (Average)</SLALoadRuleDef_x002B_m_RuleUIName>
+<SLALoadRuleDef_x002B_m_Measurement>transaction_response_time</SLALoadRuleDef_x002B_m_Measurement>
+<SLALoadRuleDef_x002B_m_CalcDirection>less_than_equal</SLALoadRuleDef_x002B_m_CalcDirection>
+<SLARuleDefWithCalcDirection_x002B_m_RuleName>transaction_response_time_vuser_init_Transaction</SLARuleDefWithCalcDirection_x002B_m_RuleName>
+<SLARuleDefWithCalcDirection_x002B_m_RuleUIName>Transaction Response Time (Average)</SLARuleDefWithCalcDirection_x002B_m_RuleUIName>
+<SLARuleDefWithCalcDirection_x002B_m_Measurement>transaction_response_time</SLARuleDefWithCalcDirection_x002B_m_Measurement>
+<SLARuleDefWithCalcDirection_x002B_m_CalcDirection>less_than_equal</SLARuleDefWithCalcDirection_x002B_m_CalcDirection>
+<SLARuleDef_x002B_m_RuleName>transaction_response_time_vuser_init_Transaction</SLARuleDef_x002B_m_RuleName>
+<SLARuleDef_x002B_m_RuleUIName>Transaction Response Time (Average)</SLARuleDef_x002B_m_RuleUIName>
+<SLARuleDef_x002B_m_Measurement>transaction_response_time</SLARuleDef_x002B_m_Measurement>
+<SLARuleDef_x002B_m_CalcDirection>less_than_equal</SLARuleDef_x002B_m_CalcDirection>
+</a7:SLAComplexLoadRuleDef>
+<a7:ComplexLoadRuleData id="ref-22" xmlns:a7="http://schemas.microsoft.com/clr/nsassem/SLARules/Analysis.SLA">
+<m_SubMsrName>vuser_init_Transaction</m_SubMsrName>
+<m_TrackingPeriodInSec>5</m_TrackingPeriodInSec>
+<m_StartTimeInSec>0</m_StartTimeInSec>
+<m_EndTimeInSec>184</m_EndTimeInSec>
+<LoadRuleData_x002B_m_TrackingPeriodInSec>5</LoadRuleData_x002B_m_TrackingPeriodInSec>
+<LoadRuleData_x002B_m_StartTimeInSec>0</LoadRuleData_x002B_m_StartTimeInSec>
+<LoadRuleData_x002B_m_EndTimeInSec>184</LoadRuleData_x002B_m_EndTimeInSec>
+</a7:ComplexLoadRuleData>
+<a7:SLALoadRuleResult id="ref-23" xmlns:a7="http://schemas.microsoft.com/clr/nsassem/SLARules/Analysis.SLA">
+<m_TimeRangeCollection href="#ref-29"/>
+</a7:SLALoadRuleResult>
+<a9:SLAThresholdsContainer id="ref-24" xmlns:a9="http://schemas.microsoft.com/clr/nsassem/SLAThresholds/Analysis.SLA">
+<m_ThresholdsCollection href="#ref-30"/>
+</a9:SLAThresholdsContainer>
+<a2:ArrayList id="ref-25" xmlns:a2="http://schemas.microsoft.com/clr/ns/System.Collections">
+<_items href="#ref-31"/>
+<_size>37</_size>
+<_version>37</_version>
+</a2:ArrayList>
+<a9:SLAThresholdsContainer id="ref-26" xmlns:a9="http://schemas.microsoft.com/clr/nsassem/SLAThresholds/Analysis.SLA">
+<m_ThresholdsCollection href="#ref-32"/>
+</a9:SLAThresholdsContainer>
+<a2:ArrayList id="ref-27" xmlns:a2="http://schemas.microsoft.com/clr/ns/System.Collections">
+<_items href="#ref-33"/>
+<_size>37</_size>
+<_version>37</_version>
+</a2:ArrayList>
+<a9:SLAThresholdsContainer id="ref-28" xmlns:a9="http://schemas.microsoft.com/clr/nsassem/SLAThresholds/Analysis.SLA">
+<m_ThresholdsCollection href="#ref-34"/>
+</a9:SLAThresholdsContainer>
+<a2:ArrayList id="ref-29" xmlns:a2="http://schemas.microsoft.com/clr/ns/System.Collections">
+<_items href="#ref-35"/>
+<_size>37</_size>
+<_version>37</_version>
+</a2:ArrayList>
+<a2:ArrayList id="ref-30" xmlns:a2="http://schemas.microsoft.com/clr/ns/System.Collections">
+<_items href="#ref-36"/>
+<_size>1</_size>
+<_version>2</_version>
+</a2:ArrayList>
+<SOAP-ENC:Array id="ref-31" SOAP-ENC:arrayType="xsd:anyType[64]">
+<item href="#ref-37"/>
+<item href="#ref-38"/>
+<item href="#ref-39"/>
+<item href="#ref-40"/>
+<item href="#ref-41"/>
+<item href="#ref-42"/>
+<item href="#ref-43"/>
+<item href="#ref-44"/>
+<item href="#ref-45"/>
+<item href="#ref-46"/>
+<item href="#ref-47"/>
+<item href="#ref-48"/>
+<item href="#ref-49"/>
+<item href="#ref-50"/>
+<item href="#ref-51"/>
+<item href="#ref-52"/>
+<item href="#ref-53"/>
+<item href="#ref-54"/>
+<item href="#ref-55"/>
+<item href="#ref-56"/>
+<item href="#ref-57"/>
+<item href="#ref-58"/>
+<item href="#ref-59"/>
+<item href="#ref-60"/>
+<item href="#ref-61"/>
+<item href="#ref-62"/>
+<item href="#ref-63"/>
+<item href="#ref-64"/>
+<item href="#ref-65"/>
+<item href="#ref-66"/>
+<item href="#ref-67"/>
+<item href="#ref-68"/>
+<item href="#ref-69"/>
+<item href="#ref-70"/>
+<item href="#ref-71"/>
+<item href="#ref-72"/>
+<item href="#ref-73"/>
+</SOAP-ENC:Array>
+<a2:ArrayList id="ref-32" xmlns:a2="http://schemas.microsoft.com/clr/ns/System.Collections">
+<_items href="#ref-74"/>
+<_size>1</_size>
+<_version>2</_version>
+</a2:ArrayList>
+<SOAP-ENC:Array id="ref-33" SOAP-ENC:arrayType="xsd:anyType[64]">
+<item href="#ref-75"/>
+<item href="#ref-76"/>
+<item href="#ref-77"/>
+<item href="#ref-78"/>
+<item href="#ref-79"/>
+<item href="#ref-80"/>
+<item href="#ref-81"/>
+<item href="#ref-82"/>
+<item href="#ref-83"/>
+<item href="#ref-84"/>
+<item href="#ref-85"/>
+<item href="#ref-86"/>
+<item href="#ref-87"/>
+<item href="#ref-88"/>
+<item href="#ref-89"/>
+<item href="#ref-90"/>
+<item href="#ref-91"/>
+<item href="#ref-92"/>
+<item href="#ref-93"/>
+<item href="#ref-94"/>
+<item href="#ref-95"/>
+<item href="#ref-96"/>
+<item href="#ref-97"/>
+<item href="#ref-98"/>
+<item href="#ref-99"/>
+<item href="#ref-100"/>
+<item href="#ref-101"/>
+<item href="#ref-102"/>
+<item href="#ref-103"/>
+<item href="#ref-104"/>
+<item href="#ref-105"/>
+<item href="#ref-106"/>
+<item href="#ref-107"/>
+<item href="#ref-108"/>
+<item href="#ref-109"/>
+<item href="#ref-110"/>
+<item href="#ref-111"/>
+</SOAP-ENC:Array>
+<a2:ArrayList id="ref-34" xmlns:a2="http://schemas.microsoft.com/clr/ns/System.Collections">
+<_items href="#ref-112"/>
+<_size>1</_size>
+<_version>2</_version>
+</a2:ArrayList>
+<SOAP-ENC:Array id="ref-35" SOAP-ENC:arrayType="xsd:anyType[64]">
+<item href="#ref-113"/>
+<item href="#ref-114"/>
+<item href="#ref-115"/>
+<item href="#ref-116"/>
+<item href="#ref-117"/>
+<item href="#ref-118"/>
+<item href="#ref-119"/>
+<item href="#ref-120"/>
+<item href="#ref-121"/>
+<item href="#ref-122"/>
+<item href="#ref-123"/>
+<item href="#ref-124"/>
+<item href="#ref-125"/>
+<item href="#ref-126"/>
+<item href="#ref-127"/>
+<item href="#ref-128"/>
+<item href="#ref-129"/>
+<item href="#ref-130"/>
+<item href="#ref-131"/>
+<item href="#ref-132"/>
+<item href="#ref-133"/>
+<item href="#ref-134"/>
+<item href="#ref-135"/>
+<item href="#ref-136"/>
+<item href="#ref-137"/>
+<item href="#ref-138"/>
+<item href="#ref-139"/>
+<item href="#ref-140"/>
+<item href="#ref-141"/>
+<item href="#ref-142"/>
+<item href="#ref-143"/>
+<item href="#ref-144"/>
+<item href="#ref-145"/>
+<item href="#ref-146"/>
+<item href="#ref-147"/>
+<item href="#ref-148"/>
+<item href="#ref-149"/>
+</SOAP-ENC:Array>
+<SOAP-ENC:Array id="ref-36" SOAP-ENC:arrayType="xsd:anyType[4]">
+<item href="#ref-150"/>
+</SOAP-ENC:Array>
+<a7:TimeRangeRecord id="ref-37" xmlns:a7="http://schemas.microsoft.com/clr/nsassem/SLARules/Analysis.SLA">
+<m_PeriodStartInSec>0</m_PeriodStartInSec>
+<m_PeriodEndInSec>5</m_PeriodEndInSec>
+<m_Status>rulesStatusNoData</m_Status>
+<m_ActualValue>0</m_ActualValue>
+<m_ExpectedValue>0</m_ExpectedValue>
+<m_FormattedActualValue xsi:null="1"/>
+<m_LoadValue>0</m_LoadValue>
+</a7:TimeRangeRecord>
+<a7:TimeRangeRecord id="ref-38" xmlns:a7="http://schemas.microsoft.com/clr/nsassem/SLARules/Analysis.SLA">
+<m_PeriodStartInSec>5</m_PeriodStartInSec>
+<m_PeriodEndInSec>10</m_PeriodEndInSec>
+<m_Status>rulesStatusFail</m_Status>
+<m_ActualValue>3.71869055</m_ActualValue>
+<m_ExpectedValue>1</m_ExpectedValue>
+<m_FormattedActualValue xsi:null="1"/>
+<m_LoadValue>-1</m_LoadValue>
+</a7:TimeRangeRecord>
+<a7:TimeRangeRecord id="ref-39" xmlns:a7="http://schemas.microsoft.com/clr/nsassem/SLARules/Analysis.SLA">
+<m_PeriodStartInSec>10</m_PeriodStartInSec>
+<m_PeriodEndInSec>15</m_PeriodEndInSec>
+<m_Status>rulesStatusFail</m_Status>
+<m_ActualValue>3.2357705</m_ActualValue>
+<m_ExpectedValue>1</m_ExpectedValue>
+<m_FormattedActualValue xsi:null="1"/>
+<m_LoadValue>-1</m_LoadValue>
+</a7:TimeRangeRecord>
+<a7:TimeRangeRecord id="ref-40" xmlns:a7="http://schemas.microsoft.com/clr/nsassem/SLARules/Analysis.SLA">
+<m_PeriodStartInSec>15</m_PeriodStartInSec>
+<m_PeriodEndInSec>20</m_PeriodEndInSec>
+<m_Status>rulesStatusFail</m_Status>
+<m_ActualValue>3.4778719</m_ActualValue>
+<m_ExpectedValue>1</m_ExpectedValue>
+<m_FormattedActualValue xsi:null="1"/>
+<m_LoadValue>-1</m_LoadValue>
+</a7:TimeRangeRecord>
+<a7:TimeRangeRecord id="ref-41" xmlns:a7="http://schemas.microsoft.com/clr/nsassem/SLARules/Analysis.SLA">
+<m_PeriodStartInSec>20</m_PeriodStartInSec>
+<m_PeriodEndInSec>25</m_PeriodEndInSec>
+<m_Status>rulesStatusFail</m_Status>
+<m_ActualValue>2.87914085</m_ActualValue>
+<m_ExpectedValue>1</m_ExpectedValue>
+<m_FormattedActualValue xsi:null="1"/>
+<m_LoadValue>-1</m_LoadValue>
+</a7:TimeRangeRecord>
+<a7:TimeRangeRecord id="ref-42" xmlns:a7="http://schemas.microsoft.com/clr/nsassem/SLARules/Analysis.SLA">
+<m_PeriodStartInSec>25</m_PeriodStartInSec>
+<m_PeriodEndInSec>30</m_PeriodEndInSec>
+<m_Status>rulesStatusFail</m_Status>
+<m_ActualValue>4.3182023</m_ActualValue>
+<m_ExpectedValue>1</m_ExpectedValue>
+<m_FormattedActualValue xsi:null="1"/>
+<m_LoadValue>-1</m_LoadValue>
+</a7:TimeRangeRecord>
+<a7:TimeRangeRecord id="ref-43" xmlns:a7="http://schemas.microsoft.com/clr/nsassem/SLARules/Analysis.SLA">
+<m_PeriodStartInSec>30</m_PeriodStartInSec>
+<m_PeriodEndInSec>35</m_PeriodEndInSec>
+<m_Status>rulesStatusFail</m_Status>
+<m_ActualValue>2.737643</m_ActualValue>
+<m_ExpectedValue>1</m_ExpectedValue>
+<m_FormattedActualValue xsi:null="1"/>
+<m_LoadValue>-1</m_LoadValue>
+</a7:TimeRangeRecord>
+<a7:TimeRangeRecord id="ref-44" xmlns:a7="http://schemas.microsoft.com/clr/nsassem/SLARules/Analysis.SLA">
+<m_PeriodStartInSec>35</m_PeriodStartInSec>
+<m_PeriodEndInSec>40</m_PeriodEndInSec>
+<m_Status>rulesStatusFail</m_Status>
+<m_ActualValue>2.9340148</m_ActualValue>
+<m_ExpectedValue>1</m_ExpectedValue>
+<m_FormattedActualValue xsi:null="1"/>
+<m_LoadValue>-1</m_LoadValue>
+</a7:TimeRangeRecord>
+<a7:TimeRangeRecord id="ref-45" xmlns:a7="http://schemas.microsoft.com/clr/nsassem/SLARules/Analysis.SLA">
+<m_PeriodStartInSec>40</m_PeriodStartInSec>
+<m_PeriodEndInSec>45</m_PeriodEndInSec>
+<m_Status>rulesStatusFail</m_Status>
+<m_ActualValue>2.9194164</m_ActualValue>
+<m_ExpectedValue>1</m_ExpectedValue>
+<m_FormattedActualValue xsi:null="1"/>
+<m_LoadValue>-1</m_LoadValue>
+</a7:TimeRangeRecord>
+<a7:TimeRangeRecord id="ref-46" xmlns:a7="http://schemas.microsoft.com/clr/nsassem/SLARules/Analysis.SLA">
+<m_PeriodStartInSec>45</m_PeriodStartInSec>
+<m_PeriodEndInSec>50</m_PeriodEndInSec>
+<m_Status>rulesStatusFail</m_Status>
+<m_ActualValue>3.3682077</m_ActualValue>
+<m_ExpectedValue>1</m_ExpectedValue>
+<m_FormattedActualValue xsi:null="1"/>
+<m_LoadValue>-1</m_LoadValue>
+</a7:TimeRangeRecord>
+<a7:TimeRangeRecord id="ref-47" xmlns:a7="http://schemas.microsoft.com/clr/nsassem/SLARules/Analysis.SLA">
+<m_PeriodStartInSec>50</m_PeriodStartInSec>
+<m_PeriodEndInSec>55</m_PeriodEndInSec>
+<m_Status>rulesStatusFail</m_Status>
+<m_ActualValue>2.8719678</m_ActualValue>
+<m_ExpectedValue>1</m_ExpectedValue>
+<m_FormattedActualValue xsi:null="1"/>
+<m_LoadValue>-1</m_LoadValue>
+</a7:TimeRangeRecord>
+<a7:TimeRangeRecord id="ref-48" xmlns:a7="http://schemas.microsoft.com/clr/nsassem/SLARules/Analysis.SLA">
+<m_PeriodStartInSec>55</m_PeriodStartInSec>
+<m_PeriodEndInSec>60</m_PeriodEndInSec>
+<m_Status>rulesStatusFail</m_Status>
+<m_ActualValue>3.02729725</m_ActualValue>
+<m_ExpectedValue>1</m_ExpectedValue>
+<m_FormattedActualValue xsi:null="1"/>
+<m_LoadValue>-1</m_LoadValue>
+</a7:TimeRangeRecord>
+<a7:TimeRangeRecord id="ref-49" xmlns:a7="http://schemas.microsoft.com/clr/nsassem/SLARules/Analysis.SLA">
+<m_PeriodStartInSec>60</m_PeriodStartInSec>
+<m_PeriodEndInSec>65</m_PeriodEndInSec>
+<m_Status>rulesStatusFail</m_Status>
+<m_ActualValue>2.92534555</m_ActualValue>
+<m_ExpectedValue>1</m_ExpectedValue>
+<m_FormattedActualValue xsi:null="1"/>
+<m_LoadValue>-1</m_LoadValue>
+</a7:TimeRangeRecord>
+<a7:TimeRangeRecord id="ref-50" xmlns:a7="http://schemas.microsoft.com/clr/nsassem/SLARules/Analysis.SLA">
+<m_PeriodStartInSec>65</m_PeriodStartInSec>
+<m_PeriodEndInSec>70</m_PeriodEndInSec>
+<m_Status>rulesStatusFail</m_Status>
+<m_ActualValue>2.7409205</m_ActualValue>
+<m_ExpectedValue>1</m_ExpectedValue>
+<m_FormattedActualValue xsi:null="1"/>
+<m_LoadValue>-1</m_LoadValue>
+</a7:TimeRangeRecord>
+<a7:TimeRangeRecord id="ref-51" xmlns:a7="http://schemas.microsoft.com/clr/nsassem/SLARules/Analysis.SLA">
+<m_PeriodStartInSec>70</m_PeriodStartInSec>
+<m_PeriodEndInSec>75</m_PeriodEndInSec>
+<m_Status>rulesStatusFail</m_Status>
+<m_ActualValue>2.99051415</m_ActualValue>
+<m_ExpectedValue>1</m_ExpectedValue>
+<m_FormattedActualValue xsi:null="1"/>
+<m_LoadValue>-1</m_LoadValue>
+</a7:TimeRangeRecord>
+<a7:TimeRangeRecord id="ref-52" xmlns:a7="http://schemas.microsoft.com/clr/nsassem/SLARules/Analysis.SLA">
+<m_PeriodStartInSec>75</m_PeriodStartInSec>
+<m_PeriodEndInSec>80</m_PeriodEndInSec>
+<m_Status>rulesStatusFail</m_Status>
+<m_ActualValue>3.16554105</m_ActualValue>
+<m_ExpectedValue>1</m_ExpectedValue>
+<m_FormattedActualValue xsi:null="1"/>
+<m_LoadValue>-1</m_LoadValue>
+</a7:TimeRangeRecord>
+<a7:TimeRangeRecord id="ref-53" xmlns:a7="http://schemas.microsoft.com/clr/nsassem/SLARules/Analysis.SLA">
+<m_PeriodStartInSec>80</m_PeriodStartInSec>
+<m_PeriodEndInSec>85</m_PeriodEndInSec>
+<m_Status>rulesStatusFail</m_Status>
+<m_ActualValue>2.9066749</m_ActualValue>
+<m_ExpectedValue>1</m_ExpectedValue>
+<m_FormattedActualValue xsi:null="1"/>
+<m_LoadValue>-1</m_LoadValue>
+</a7:TimeRangeRecord>
+<a7:TimeRangeRecord id="ref-54" xmlns:a7="http://schemas.microsoft.com/clr/nsassem/SLARules/Analysis.SLA">
+<m_PeriodStartInSec>85</m_PeriodStartInSec>
+<m_PeriodEndInSec>90</m_PeriodEndInSec>
+<m_Status>rulesStatusFail</m_Status>
+<m_ActualValue>2.9644371</m_ActualValue>
+<m_ExpectedValue>1</m_ExpectedValue>
+<m_FormattedActualValue xsi:null="1"/>
+<m_LoadValue>-1</m_LoadValue>
+</a7:TimeRangeRecord>
+<a7:TimeRangeRecord id="ref-55" xmlns:a7="http://schemas.microsoft.com/clr/nsassem/SLARules/Analysis.SLA">
+<m_PeriodStartInSec>90</m_PeriodStartInSec>
+<m_PeriodEndInSec>95</m_PeriodEndInSec>
+<m_Status>rulesStatusFail</m_Status>
+<m_ActualValue>2.9240099</m_ActualValue>
+<m_ExpectedValue>1</m_ExpectedValue>
+<m_FormattedActualValue xsi:null="1"/>
+<m_LoadValue>-1</m_LoadValue>
+</a7:TimeRangeRecord>
+<a7:TimeRangeRecord id="ref-56" xmlns:a7="http://schemas.microsoft.com/clr/nsassem/SLARules/Analysis.SLA">
+<m_PeriodStartInSec>95</m_PeriodStartInSec>
+<m_PeriodEndInSec>100</m_PeriodEndInSec>
+<m_Status>rulesStatusFail</m_Status>
+<m_ActualValue>2.7328219</m_ActualValue>
+<m_ExpectedValue>1</m_ExpectedValue>
+<m_FormattedActualValue xsi:null="1"/>
+<m_LoadValue>-1</m_LoadValue>
+</a7:TimeRangeRecord>
+<a7:TimeRangeRecord id="ref-57" xmlns:a7="http://schemas.microsoft.com/clr/nsassem/SLARules/Analysis.SLA">
+<m_PeriodStartInSec>100</m_PeriodStartInSec>
+<m_PeriodEndInSec>105</m_PeriodEndInSec>
+<m_Status>rulesStatusFail</m_Status>
+<m_ActualValue>3.22011969</m_ActualValue>
+<m_ExpectedValue>1</m_ExpectedValue>
+<m_FormattedActualValue xsi:null="1"/>
+<m_LoadValue>-1</m_LoadValue>
+</a7:TimeRangeRecord>
+<a7:TimeRangeRecord id="ref-58" xmlns:a7="http://schemas.microsoft.com/clr/nsassem/SLARules/Analysis.SLA">
+<m_PeriodStartInSec>105</m_PeriodStartInSec>
+<m_PeriodEndInSec>110</m_PeriodEndInSec>
+<m_Status>rulesStatusFail</m_Status>
+<m_ActualValue>3.0546869</m_ActualValue>
+<m_ExpectedValue>1</m_ExpectedValue>
+<m_FormattedActualValue xsi:null="1"/>
+<m_LoadValue>-1</m_LoadValue>
+</a7:TimeRangeRecord>
+<a7:TimeRangeRecord id="ref-59" xmlns:a7="http://schemas.microsoft.com/clr/nsassem/SLARules/Analysis.SLA">
+<m_PeriodStartInSec>110</m_PeriodStartInSec>
+<m_PeriodEndInSec>115</m_PeriodEndInSec>
+<m_Status>rulesStatusFail</m_Status>
+<m_ActualValue>3.1651597</m_ActualValue>
+<m_ExpectedValue>1</m_ExpectedValue>
+<m_FormattedActualValue xsi:null="1"/>
+<m_LoadValue>-1</m_LoadValue>
+</a7:TimeRangeRecord>
+<a7:TimeRangeRecord id="ref-60" xmlns:a7="http://schemas.microsoft.com/clr/nsassem/SLARules/Analysis.SLA">
+<m_PeriodStartInSec>115</m_PeriodStartInSec>
+<m_PeriodEndInSec>120</m_PeriodEndInSec>
+<m_Status>rulesStatusFail</m_Status>
+<m_ActualValue>2.9378297</m_ActualValue>
+<m_ExpectedValue>1</m_ExpectedValue>
+<m_FormattedActualValue xsi:null="1"/>
+<m_LoadValue>-1</m_LoadValue>
+</a7:TimeRangeRecord>
+<a7:TimeRangeRecord id="ref-61" xmlns:a7="http://schemas.microsoft.com/clr/nsassem/SLARules/Analysis.SLA">
+<m_PeriodStartInSec>120</m_PeriodStartInSec>
+<m_PeriodEndInSec>125</m_PeriodEndInSec>
+<m_Status>rulesStatusFail</m_Status>
+<m_ActualValue>2.92241505</m_ActualValue>
+<m_ExpectedValue>1</m_ExpectedValue>
+<m_FormattedActualValue xsi:null="1"/>
+<m_LoadValue>-1</m_LoadValue>
+</a7:TimeRangeRecord>
+<a7:TimeRangeRecord id="ref-62" xmlns:a7="http://schemas.microsoft.com/clr/nsassem/SLARules/Analysis.SLA">
+<m_PeriodStartInSec>125</m_PeriodStartInSec>
+<m_PeriodEndInSec>130</m_PeriodEndInSec>
+<m_Status>rulesStatusFail</m_Status>
+<m_ActualValue>2.7112386</m_ActualValue>
+<m_ExpectedValue>1</m_ExpectedValue>
+<m_FormattedActualValue xsi:null="1"/>
+<m_LoadValue>-1</m_LoadValue>
+</a7:TimeRangeRecord>
+<a7:TimeRangeRecord id="ref-63" xmlns:a7="http://schemas.microsoft.com/clr/nsassem/SLARules/Analysis.SLA">
+<m_PeriodStartInSec>130</m_PeriodStartInSec>
+<m_PeriodEndInSec>135</m_PeriodEndInSec>
+<m_Status>rulesStatusFail</m_Status>
+<m_ActualValue>2.9220159</m_ActualValue>
+<m_ExpectedValue>1</m_ExpectedValue>
+<m_FormattedActualValue xsi:null="1"/>
+<m_LoadValue>-1</m_LoadValue>
+</a7:TimeRangeRecord>
+<a7:TimeRangeRecord id="ref-64" xmlns:a7="http://schemas.microsoft.com/clr/nsassem/SLARules/Analysis.SLA">
+<m_PeriodStartInSec>135</m_PeriodStartInSec>
+<m_PeriodEndInSec>140</m_PeriodEndInSec>
+<m_Status>rulesStatusFail</m_Status>
+<m_ActualValue>3.0358734</m_ActualValue>
+<m_ExpectedValue>1</m_ExpectedValue>
+<m_FormattedActualValue xsi:null="1"/>
+<m_LoadValue>-1</m_LoadValue>
+</a7:TimeRangeRecord>
+<a7:TimeRangeRecord id="ref-65" xmlns:a7="http://schemas.microsoft.com/clr/nsassem/SLARules/Analysis.SLA">
+<m_PeriodStartInSec>140</m_PeriodStartInSec>
+<m_PeriodEndInSec>145</m_PeriodEndInSec>
+<m_Status>rulesStatusFail</m_Status>
+<m_ActualValue>3.0256531</m_ActualValue>
+<m_ExpectedValue>1</m_ExpectedValue>
+<m_FormattedActualValue xsi:null="1"/>
+<m_LoadValue>-1</m_LoadValue>
+</a7:TimeRangeRecord>
+<a7:TimeRangeRecord id="ref-66" xmlns:a7="http://schemas.microsoft.com/clr/nsassem/SLARules/Analysis.SLA">
+<m_PeriodStartInSec>145</m_PeriodStartInSec>
+<m_PeriodEndInSec>150</m_PeriodEndInSec>
+<m_Status>rulesStatusFail</m_Status>
+<m_ActualValue>2.9689479</m_ActualValue>
+<m_ExpectedValue>1</m_ExpectedValue>
+<m_FormattedActualValue xsi:null="1"/>
+<m_LoadValue>-1</m_LoadValue>
+</a7:TimeRangeRecord>
+<a7:TimeRangeRecord id="ref-67" xmlns:a7="http://schemas.microsoft.com/clr/nsassem/SLARules/Analysis.SLA">
+<m_PeriodStartInSec>150</m_PeriodStartInSec>
+<m_PeriodEndInSec>155</m_PeriodEndInSec>
+<m_Status>rulesStatusFail</m_Status>
+<m_ActualValue>2.9046754</m_ActualValue>
+<m_ExpectedValue>1</m_ExpectedValue>
+<m_FormattedActualValue xsi:null="1"/>
+<m_LoadValue>-1</m_LoadValue>
+</a7:TimeRangeRecord>
+<a7:TimeRangeRecord id="ref-68" xmlns:a7="http://schemas.microsoft.com/clr/nsassem/SLARules/Analysis.SLA">
+<m_PeriodStartInSec>155</m_PeriodStartInSec>
+<m_PeriodEndInSec>160</m_PeriodEndInSec>
+<m_Status>rulesStatusFail</m_Status>
+<m_ActualValue>2.85421525</m_ActualValue>
+<m_ExpectedValue>1</m_ExpectedValue>
+<m_FormattedActualValue xsi:null="1"/>
+<m_LoadValue>-1</m_LoadValue>
+</a7:TimeRangeRecord>
+<a7:TimeRangeRecord id="ref-69" xmlns:a7="http://schemas.microsoft.com/clr/nsassem/SLARules/Analysis.SLA">
+<m_PeriodStartInSec>160</m_PeriodStartInSec>
+<m_PeriodEndInSec>165</m_PeriodEndInSec>
+<m_Status>rulesStatusFail</m_Status>
+<m_ActualValue>2.6327846</m_ActualValue>
+<m_ExpectedValue>1</m_ExpectedValue>
+<m_FormattedActualValue xsi:null="1"/>
+<m_LoadValue>-1</m_LoadValue>
+</a7:TimeRangeRecord>
+<a7:TimeRangeRecord id="ref-70" xmlns:a7="http://schemas.microsoft.com/clr/nsassem/SLARules/Analysis.SLA">
+<m_PeriodStartInSec>165</m_PeriodStartInSec>
+<m_PeriodEndInSec>170</m_PeriodEndInSec>
+<m_Status>rulesStatusFail</m_Status>
+<m_ActualValue>2.92152489</m_ActualValue>
+<m_ExpectedValue>1</m_ExpectedValue>
+<m_FormattedActualValue xsi:null="1"/>
+<m_LoadValue>-1</m_LoadValue>
+</a7:TimeRangeRecord>
+<a7:TimeRangeRecord id="ref-71" xmlns:a7="http://schemas.microsoft.com/clr/nsassem/SLARules/Analysis.SLA">
+<m_PeriodStartInSec>170</m_PeriodStartInSec>
+<m_PeriodEndInSec>175</m_PeriodEndInSec>
+<m_Status>rulesStatusFail</m_Status>
+<m_ActualValue>2.92357505</m_ActualValue>
+<m_ExpectedValue>1</m_ExpectedValue>
+<m_FormattedActualValue xsi:null="1"/>
+<m_LoadValue>-1</m_LoadValue>
+</a7:TimeRangeRecord>
+<a7:TimeRangeRecord id="ref-72" xmlns:a7="http://schemas.microsoft.com/clr/nsassem/SLARules/Analysis.SLA">
+<m_PeriodStartInSec>175</m_PeriodStartInSec>
+<m_PeriodEndInSec>180</m_PeriodEndInSec>
+<m_Status>rulesStatusFail</m_Status>
+<m_ActualValue>3.1263251</m_ActualValue>
+<m_ExpectedValue>1</m_ExpectedValue>
+<m_FormattedActualValue xsi:null="1"/>
+<m_LoadValue>-1</m_LoadValue>
+</a7:TimeRangeRecord>
+<a7:TimeRangeRecord id="ref-73" xmlns:a7="http://schemas.microsoft.com/clr/nsassem/SLARules/Analysis.SLA">
+<m_PeriodStartInSec>180</m_PeriodStartInSec>
+<m_PeriodEndInSec>184</m_PeriodEndInSec>
+<m_Status>rulesStatusFail</m_Status>
+<m_ActualValue>3.0293655</m_ActualValue>
+<m_ExpectedValue>1</m_ExpectedValue>
+<m_FormattedActualValue xsi:null="1"/>
+<m_LoadValue>-1</m_LoadValue>
+</a7:TimeRangeRecord>
+<SOAP-ENC:Array id="ref-74" SOAP-ENC:arrayType="xsd:anyType[4]">
+<item href="#ref-151"/>
+</SOAP-ENC:Array>
+<a7:TimeRangeRecord id="ref-75" xmlns:a7="http://schemas.microsoft.com/clr/nsassem/SLARules/Analysis.SLA">
+<m_PeriodStartInSec>0</m_PeriodStartInSec>
+<m_PeriodEndInSec>5</m_PeriodEndInSec>
+<m_Status>rulesStatusNoData</m_Status>
+<m_ActualValue>0</m_ActualValue>
+<m_ExpectedValue>0</m_ExpectedValue>
+<m_FormattedActualValue xsi:null="1"/>
+<m_LoadValue>0</m_LoadValue>
+</a7:TimeRangeRecord>
+<a7:TimeRangeRecord id="ref-76" xmlns:a7="http://schemas.microsoft.com/clr/nsassem/SLARules/Analysis.SLA">
+<m_PeriodStartInSec>5</m_PeriodStartInSec>
+<m_PeriodEndInSec>10</m_PeriodEndInSec>
+<m_Status>rulesStatusNoData</m_Status>
+<m_ActualValue>0</m_ActualValue>
+<m_ExpectedValue>0</m_ExpectedValue>
+<m_FormattedActualValue xsi:null="1"/>
+<m_LoadValue>0</m_LoadValue>
+</a7:TimeRangeRecord>
+<a7:TimeRangeRecord id="ref-77" xmlns:a7="http://schemas.microsoft.com/clr/nsassem/SLARules/Analysis.SLA">
+<m_PeriodStartInSec>10</m_PeriodStartInSec>
+<m_PeriodEndInSec>15</m_PeriodEndInSec>
+<m_Status>rulesStatusNoData</m_Status>
+<m_ActualValue>0</m_ActualValue>
+<m_ExpectedValue>0</m_ExpectedValue>
+<m_FormattedActualValue xsi:null="1"/>
+<m_LoadValue>0</m_LoadValue>
+</a7:TimeRangeRecord>
+<a7:TimeRangeRecord id="ref-78" xmlns:a7="http://schemas.microsoft.com/clr/nsassem/SLARules/Analysis.SLA">
+<m_PeriodStartInSec>15</m_PeriodStartInSec>
+<m_PeriodEndInSec>20</m_PeriodEndInSec>
+<m_Status>rulesStatusNoData</m_Status>
+<m_ActualValue>0</m_ActualValue>
+<m_ExpectedValue>0</m_ExpectedValue>
+<m_FormattedActualValue xsi:null="1"/>
+<m_LoadValue>0</m_LoadValue>
+</a7:TimeRangeRecord>
+<a7:TimeRangeRecord id="ref-79" xmlns:a7="http://schemas.microsoft.com/clr/nsassem/SLARules/Analysis.SLA">
+<m_PeriodStartInSec>20</m_PeriodStartInSec>
+<m_PeriodEndInSec>25</m_PeriodEndInSec>
+<m_Status>rulesStatusNoData</m_Status>
+<m_ActualValue>0</m_ActualValue>
+<m_ExpectedValue>0</m_ExpectedValue>
+<m_FormattedActualValue xsi:null="1"/>
+<m_LoadValue>0</m_LoadValue>
+</a7:TimeRangeRecord>
+<a7:TimeRangeRecord id="ref-80" xmlns:a7="http://schemas.microsoft.com/clr/nsassem/SLARules/Analysis.SLA">
+<m_PeriodStartInSec>25</m_PeriodStartInSec>
+<m_PeriodEndInSec>30</m_PeriodEndInSec>
+<m_Status>rulesStatusNoData</m_Status>
+<m_ActualValue>0</m_ActualValue>
+<m_ExpectedValue>0</m_ExpectedValue>
+<m_FormattedActualValue xsi:null="1"/>
+<m_LoadValue>0</m_LoadValue>
+</a7:TimeRangeRecord>
+<a7:TimeRangeRecord id="ref-81" xmlns:a7="http://schemas.microsoft.com/clr/nsassem/SLARules/Analysis.SLA">
+<m_PeriodStartInSec>30</m_PeriodStartInSec>
+<m_PeriodEndInSec>35</m_PeriodEndInSec>
+<m_Status>rulesStatusNoData</m_Status>
+<m_ActualValue>0</m_ActualValue>
+<m_ExpectedValue>0</m_ExpectedValue>
+<m_FormattedActualValue xsi:null="1"/>
+<m_LoadValue>0</m_LoadValue>
+</a7:TimeRangeRecord>
+<a7:TimeRangeRecord id="ref-82" xmlns:a7="http://schemas.microsoft.com/clr/nsassem/SLARules/Analysis.SLA">
+<m_PeriodStartInSec>35</m_PeriodStartInSec>
+<m_PeriodEndInSec>40</m_PeriodEndInSec>
+<m_Status>rulesStatusNoData</m_Status>
+<m_ActualValue>0</m_ActualValue>
+<m_ExpectedValue>0</m_ExpectedValue>
+<m_FormattedActualValue xsi:null="1"/>
+<m_LoadValue>0</m_LoadValue>
+</a7:TimeRangeRecord>
+<a7:TimeRangeRecord id="ref-83" xmlns:a7="http://schemas.microsoft.com/clr/nsassem/SLARules/Analysis.SLA">
+<m_PeriodStartInSec>40</m_PeriodStartInSec>
+<m_PeriodEndInSec>45</m_PeriodEndInSec>
+<m_Status>rulesStatusNoData</m_Status>
+<m_ActualValue>0</m_ActualValue>
+<m_ExpectedValue>0</m_ExpectedValue>
+<m_FormattedActualValue xsi:null="1"/>
+<m_LoadValue>0</m_LoadValue>
+</a7:TimeRangeRecord>
+<a7:TimeRangeRecord id="ref-84" xmlns:a7="http://schemas.microsoft.com/clr/nsassem/SLARules/Analysis.SLA">
+<m_PeriodStartInSec>45</m_PeriodStartInSec>
+<m_PeriodEndInSec>50</m_PeriodEndInSec>
+<m_Status>rulesStatusNoData</m_Status>
+<m_ActualValue>0</m_ActualValue>
+<m_ExpectedValue>0</m_ExpectedValue>
+<m_FormattedActualValue xsi:null="1"/>
+<m_LoadValue>0</m_LoadValue>
+</a7:TimeRangeRecord>
+<a7:TimeRangeRecord id="ref-85" xmlns:a7="http://schemas.microsoft.com/clr/nsassem/SLARules/Analysis.SLA">
+<m_PeriodStartInSec>50</m_PeriodStartInSec>
+<m_PeriodEndInSec>55</m_PeriodEndInSec>
+<m_Status>rulesStatusNoData</m_Status>
+<m_ActualValue>0</m_ActualValue>
+<m_ExpectedValue>0</m_ExpectedValue>
+<m_FormattedActualValue xsi:null="1"/>
+<m_LoadValue>0</m_LoadValue>
+</a7:TimeRangeRecord>
+<a7:TimeRangeRecord id="ref-86" xmlns:a7="http://schemas.microsoft.com/clr/nsassem/SLARules/Analysis.SLA">
+<m_PeriodStartInSec>55</m_PeriodStartInSec>
+<m_PeriodEndInSec>60</m_PeriodEndInSec>
+<m_Status>rulesStatusNoData</m_Status>
+<m_ActualValue>0</m_ActualValue>
+<m_ExpectedValue>0</m_ExpectedValue>
+<m_FormattedActualValue xsi:null="1"/>
+<m_LoadValue>0</m_LoadValue>
+</a7:TimeRangeRecord>
+<a7:TimeRangeRecord id="ref-87" xmlns:a7="http://schemas.microsoft.com/clr/nsassem/SLARules/Analysis.SLA">
+<m_PeriodStartInSec>60</m_PeriodStartInSec>
+<m_PeriodEndInSec>65</m_PeriodEndInSec>
+<m_Status>rulesStatusNoData</m_Status>
+<m_ActualValue>0</m_ActualValue>
+<m_ExpectedValue>0</m_ExpectedValue>
+<m_FormattedActualValue xsi:null="1"/>
+<m_LoadValue>0</m_LoadValue>
+</a7:TimeRangeRecord>
+<a7:TimeRangeRecord id="ref-88" xmlns:a7="http://schemas.microsoft.com/clr/nsassem/SLARules/Analysis.SLA">
+<m_PeriodStartInSec>65</m_PeriodStartInSec>
+<m_PeriodEndInSec>70</m_PeriodEndInSec>
+<m_Status>rulesStatusNoData</m_Status>
+<m_ActualValue>0</m_ActualValue>
+<m_ExpectedValue>0</m_ExpectedValue>
+<m_FormattedActualValue xsi:null="1"/>
+<m_LoadValue>0</m_LoadValue>
+</a7:TimeRangeRecord>
+<a7:TimeRangeRecord id="ref-89" xmlns:a7="http://schemas.microsoft.com/clr/nsassem/SLARules/Analysis.SLA">
+<m_PeriodStartInSec>70</m_PeriodStartInSec>
+<m_PeriodEndInSec>75</m_PeriodEndInSec>
+<m_Status>rulesStatusNoData</m_Status>
+<m_ActualValue>0</m_ActualValue>
+<m_ExpectedValue>0</m_ExpectedValue>
+<m_FormattedActualValue xsi:null="1"/>
+<m_LoadValue>0</m_LoadValue>
+</a7:TimeRangeRecord>
+<a7:TimeRangeRecord id="ref-90" xmlns:a7="http://schemas.microsoft.com/clr/nsassem/SLARules/Analysis.SLA">
+<m_PeriodStartInSec>75</m_PeriodStartInSec>
+<m_PeriodEndInSec>80</m_PeriodEndInSec>
+<m_Status>rulesStatusNoData</m_Status>
+<m_ActualValue>0</m_ActualValue>
+<m_ExpectedValue>0</m_ExpectedValue>
+<m_FormattedActualValue xsi:null="1"/>
+<m_LoadValue>0</m_LoadValue>
+</a7:TimeRangeRecord>
+<a7:TimeRangeRecord id="ref-91" xmlns:a7="http://schemas.microsoft.com/clr/nsassem/SLARules/Analysis.SLA">
+<m_PeriodStartInSec>80</m_PeriodStartInSec>
+<m_PeriodEndInSec>85</m_PeriodEndInSec>
+<m_Status>rulesStatusNoData</m_Status>
+<m_ActualValue>0</m_ActualValue>
+<m_ExpectedValue>0</m_ExpectedValue>
+<m_FormattedActualValue xsi:null="1"/>
+<m_LoadValue>0</m_LoadValue>
+</a7:TimeRangeRecord>
+<a7:TimeRangeRecord id="ref-92" xmlns:a7="http://schemas.microsoft.com/clr/nsassem/SLARules/Analysis.SLA">
+<m_PeriodStartInSec>85</m_PeriodStartInSec>
+<m_PeriodEndInSec>90</m_PeriodEndInSec>
+<m_Status>rulesStatusNoData</m_Status>
+<m_ActualValue>0</m_ActualValue>
+<m_ExpectedValue>0</m_ExpectedValue>
+<m_FormattedActualValue xsi:null="1"/>
+<m_LoadValue>0</m_LoadValue>
+</a7:TimeRangeRecord>
+<a7:TimeRangeRecord id="ref-93" xmlns:a7="http://schemas.microsoft.com/clr/nsassem/SLARules/Analysis.SLA">
+<m_PeriodStartInSec>90</m_PeriodStartInSec>
+<m_PeriodEndInSec>95</m_PeriodEndInSec>
+<m_Status>rulesStatusNoData</m_Status>
+<m_ActualValue>0</m_ActualValue>
+<m_ExpectedValue>0</m_ExpectedValue>
+<m_FormattedActualValue xsi:null="1"/>
+<m_LoadValue>0</m_LoadValue>
+</a7:TimeRangeRecord>
+<a7:TimeRangeRecord id="ref-94" xmlns:a7="http://schemas.microsoft.com/clr/nsassem/SLARules/Analysis.SLA">
+<m_PeriodStartInSec>95</m_PeriodStartInSec>
+<m_PeriodEndInSec>100</m_PeriodEndInSec>
+<m_Status>rulesStatusNoData</m_Status>
+<m_ActualValue>0</m_ActualValue>
+<m_ExpectedValue>0</m_ExpectedValue>
+<m_FormattedActualValue xsi:null="1"/>
+<m_LoadValue>0</m_LoadValue>
+</a7:TimeRangeRecord>
+<a7:TimeRangeRecord id="ref-95" xmlns:a7="http://schemas.microsoft.com/clr/nsassem/SLARules/Analysis.SLA">
+<m_PeriodStartInSec>100</m_PeriodStartInSec>
+<m_PeriodEndInSec>105</m_PeriodEndInSec>
+<m_Status>rulesStatusNoData</m_Status>
+<m_ActualValue>0</m_ActualValue>
+<m_ExpectedValue>0</m_ExpectedValue>
+<m_FormattedActualValue xsi:null="1"/>
+<m_LoadValue>0</m_LoadValue>
+</a7:TimeRangeRecord>
+<a7:TimeRangeRecord id="ref-96" xmlns:a7="http://schemas.microsoft.com/clr/nsassem/SLARules/Analysis.SLA">
+<m_PeriodStartInSec>105</m_PeriodStartInSec>
+<m_PeriodEndInSec>110</m_PeriodEndInSec>
+<m_Status>rulesStatusNoData</m_Status>
+<m_ActualValue>0</m_ActualValue>
+<m_ExpectedValue>0</m_ExpectedValue>
+<m_FormattedActualValue xsi:null="1"/>
+<m_LoadValue>0</m_LoadValue>
+</a7:TimeRangeRecord>
+<a7:TimeRangeRecord id="ref-97" xmlns:a7="http://schemas.microsoft.com/clr/nsassem/SLARules/Analysis.SLA">
+<m_PeriodStartInSec>110</m_PeriodStartInSec>
+<m_PeriodEndInSec>115</m_PeriodEndInSec>
+<m_Status>rulesStatusNoData</m_Status>
+<m_ActualValue>0</m_ActualValue>
+<m_ExpectedValue>0</m_ExpectedValue>
+<m_FormattedActualValue xsi:null="1"/>
+<m_LoadValue>0</m_LoadValue>
+</a7:TimeRangeRecord>
+<a7:TimeRangeRecord id="ref-98" xmlns:a7="http://schemas.microsoft.com/clr/nsassem/SLARules/Analysis.SLA">
+<m_PeriodStartInSec>115</m_PeriodStartInSec>
+<m_PeriodEndInSec>120</m_PeriodEndInSec>
+<m_Status>rulesStatusNoData</m_Status>
+<m_ActualValue>0</m_ActualValue>
+<m_ExpectedValue>0</m_ExpectedValue>
+<m_FormattedActualValue xsi:null="1"/>
+<m_LoadValue>0</m_LoadValue>
+</a7:TimeRangeRecord>
+<a7:TimeRangeRecord id="ref-99" xmlns:a7="http://schemas.microsoft.com/clr/nsassem/SLARules/Analysis.SLA">
+<m_PeriodStartInSec>120</m_PeriodStartInSec>
+<m_PeriodEndInSec>125</m_PeriodEndInSec>
+<m_Status>rulesStatusNoData</m_Status>
+<m_ActualValue>0</m_ActualValue>
+<m_ExpectedValue>0</m_ExpectedValue>
+<m_FormattedActualValue xsi:null="1"/>
+<m_LoadValue>0</m_LoadValue>
+</a7:TimeRangeRecord>
+<a7:TimeRangeRecord id="ref-100" xmlns:a7="http://schemas.microsoft.com/clr/nsassem/SLARules/Analysis.SLA">
+<m_PeriodStartInSec>125</m_PeriodStartInSec>
+<m_PeriodEndInSec>130</m_PeriodEndInSec>
+<m_Status>rulesStatusNoData</m_Status>
+<m_ActualValue>0</m_ActualValue>
+<m_ExpectedValue>0</m_ExpectedValue>
+<m_FormattedActualValue xsi:null="1"/>
+<m_LoadValue>0</m_LoadValue>
+</a7:TimeRangeRecord>
+<a7:TimeRangeRecord id="ref-101" xmlns:a7="http://schemas.microsoft.com/clr/nsassem/SLARules/Analysis.SLA">
+<m_PeriodStartInSec>130</m_PeriodStartInSec>
+<m_PeriodEndInSec>135</m_PeriodEndInSec>
+<m_Status>rulesStatusNoData</m_Status>
+<m_ActualValue>0</m_ActualValue>
+<m_ExpectedValue>0</m_ExpectedValue>
+<m_FormattedActualValue xsi:null="1"/>
+<m_LoadValue>0</m_LoadValue>
+</a7:TimeRangeRecord>
+<a7:TimeRangeRecord id="ref-102" xmlns:a7="http://schemas.microsoft.com/clr/nsassem/SLARules/Analysis.SLA">
+<m_PeriodStartInSec>135</m_PeriodStartInSec>
+<m_PeriodEndInSec>140</m_PeriodEndInSec>
+<m_Status>rulesStatusNoData</m_Status>
+<m_ActualValue>0</m_ActualValue>
+<m_ExpectedValue>0</m_ExpectedValue>
+<m_FormattedActualValue xsi:null="1"/>
+<m_LoadValue>0</m_LoadValue>
+</a7:TimeRangeRecord>
+<a7:TimeRangeRecord id="ref-103" xmlns:a7="http://schemas.microsoft.com/clr/nsassem/SLARules/Analysis.SLA">
+<m_PeriodStartInSec>140</m_PeriodStartInSec>
+<m_PeriodEndInSec>145</m_PeriodEndInSec>
+<m_Status>rulesStatusNoData</m_Status>
+<m_ActualValue>0</m_ActualValue>
+<m_ExpectedValue>0</m_ExpectedValue>
+<m_FormattedActualValue xsi:null="1"/>
+<m_LoadValue>0</m_LoadValue>
+</a7:TimeRangeRecord>
+<a7:TimeRangeRecord id="ref-104" xmlns:a7="http://schemas.microsoft.com/clr/nsassem/SLARules/Analysis.SLA">
+<m_PeriodStartInSec>145</m_PeriodStartInSec>
+<m_PeriodEndInSec>150</m_PeriodEndInSec>
+<m_Status>rulesStatusNoData</m_Status>
+<m_ActualValue>0</m_ActualValue>
+<m_ExpectedValue>0</m_ExpectedValue>
+<m_FormattedActualValue xsi:null="1"/>
+<m_LoadValue>0</m_LoadValue>
+</a7:TimeRangeRecord>
+<a7:TimeRangeRecord id="ref-105" xmlns:a7="http://schemas.microsoft.com/clr/nsassem/SLARules/Analysis.SLA">
+<m_PeriodStartInSec>150</m_PeriodStartInSec>
+<m_PeriodEndInSec>155</m_PeriodEndInSec>
+<m_Status>rulesStatusNoData</m_Status>
+<m_ActualValue>0</m_ActualValue>
+<m_ExpectedValue>0</m_ExpectedValue>
+<m_FormattedActualValue xsi:null="1"/>
+<m_LoadValue>0</m_LoadValue>
+</a7:TimeRangeRecord>
+<a7:TimeRangeRecord id="ref-106" xmlns:a7="http://schemas.microsoft.com/clr/nsassem/SLARules/Analysis.SLA">
+<m_PeriodStartInSec>155</m_PeriodStartInSec>
+<m_PeriodEndInSec>160</m_PeriodEndInSec>
+<m_Status>rulesStatusNoData</m_Status>
+<m_ActualValue>0</m_ActualValue>
+<m_ExpectedValue>0</m_ExpectedValue>
+<m_FormattedActualValue xsi:null="1"/>
+<m_LoadValue>0</m_LoadValue>
+</a7:TimeRangeRecord>
+<a7:TimeRangeRecord id="ref-107" xmlns:a7="http://schemas.microsoft.com/clr/nsassem/SLARules/Analysis.SLA">
+<m_PeriodStartInSec>160</m_PeriodStartInSec>
+<m_PeriodEndInSec>165</m_PeriodEndInSec>
+<m_Status>rulesStatusNoData</m_Status>
+<m_ActualValue>0</m_ActualValue>
+<m_ExpectedValue>0</m_ExpectedValue>
+<m_FormattedActualValue xsi:null="1"/>
+<m_LoadValue>0</m_LoadValue>
+</a7:TimeRangeRecord>
+<a7:TimeRangeRecord id="ref-108" xmlns:a7="http://schemas.microsoft.com/clr/nsassem/SLARules/Analysis.SLA">
+<m_PeriodStartInSec>165</m_PeriodStartInSec>
+<m_PeriodEndInSec>170</m_PeriodEndInSec>
+<m_Status>rulesStatusNoData</m_Status>
+<m_ActualValue>0</m_ActualValue>
+<m_ExpectedValue>0</m_ExpectedValue>
+<m_FormattedActualValue xsi:null="1"/>
+<m_LoadValue>0</m_LoadValue>
+</a7:TimeRangeRecord>
+<a7:TimeRangeRecord id="ref-109" xmlns:a7="http://schemas.microsoft.com/clr/nsassem/SLARules/Analysis.SLA">
+<m_PeriodStartInSec>170</m_PeriodStartInSec>
+<m_PeriodEndInSec>175</m_PeriodEndInSec>
+<m_Status>rulesStatusNoData</m_Status>
+<m_ActualValue>0</m_ActualValue>
+<m_ExpectedValue>0</m_ExpectedValue>
+<m_FormattedActualValue xsi:null="1"/>
+<m_LoadValue>0</m_LoadValue>
+</a7:TimeRangeRecord>
+<a7:TimeRangeRecord id="ref-110" xmlns:a7="http://schemas.microsoft.com/clr/nsassem/SLARules/Analysis.SLA">
+<m_PeriodStartInSec>175</m_PeriodStartInSec>
+<m_PeriodEndInSec>180</m_PeriodEndInSec>
+<m_Status>rulesStatusNoData</m_Status>
+<m_ActualValue>0</m_ActualValue>
+<m_ExpectedValue>0</m_ExpectedValue>
+<m_FormattedActualValue xsi:null="1"/>
+<m_LoadValue>0</m_LoadValue>
+</a7:TimeRangeRecord>
+<a7:TimeRangeRecord id="ref-111" xmlns:a7="http://schemas.microsoft.com/clr/nsassem/SLARules/Analysis.SLA">
+<m_PeriodStartInSec>180</m_PeriodStartInSec>
+<m_PeriodEndInSec>184</m_PeriodEndInSec>
+<m_Status>rulesStatusOK</m_Status>
+<m_ActualValue>6.2E-06</m_ActualValue>
+<m_ExpectedValue>1</m_ExpectedValue>
+<m_FormattedActualValue xsi:null="1"/>
+<m_LoadValue>-1</m_LoadValue>
+</a7:TimeRangeRecord>
+<SOAP-ENC:Array id="ref-112" SOAP-ENC:arrayType="xsd:anyType[4]">
+<item href="#ref-152"/>
+</SOAP-ENC:Array>
+<a7:TimeRangeRecord id="ref-113" xmlns:a7="http://schemas.microsoft.com/clr/nsassem/SLARules/Analysis.SLA">
+<m_PeriodStartInSec>0</m_PeriodStartInSec>
+<m_PeriodEndInSec>5</m_PeriodEndInSec>
+<m_Status>rulesStatusOK</m_Status>
+<m_ActualValue>0.0022571</m_ActualValue>
+<m_ExpectedValue>1</m_ExpectedValue>
+<m_FormattedActualValue xsi:null="1"/>
+<m_LoadValue>-1</m_LoadValue>
+</a7:TimeRangeRecord>
+<a7:TimeRangeRecord id="ref-114" xmlns:a7="http://schemas.microsoft.com/clr/nsassem/SLARules/Analysis.SLA">
+<m_PeriodStartInSec>5</m_PeriodStartInSec>
+<m_PeriodEndInSec>10</m_PeriodEndInSec>
+<m_Status>rulesStatusNoData</m_Status>
+<m_ActualValue>0</m_ActualValue>
+<m_ExpectedValue>0</m_ExpectedValue>
+<m_FormattedActualValue xsi:null="1"/>
+<m_LoadValue>0</m_LoadValue>
+</a7:TimeRangeRecord>
+<a7:TimeRangeRecord id="ref-115" xmlns:a7="http://schemas.microsoft.com/clr/nsassem/SLARules/Analysis.SLA">
+<m_PeriodStartInSec>10</m_PeriodStartInSec>
+<m_PeriodEndInSec>15</m_PeriodEndInSec>
+<m_Status>rulesStatusNoData</m_Status>
+<m_ActualValue>0</m_ActualValue>
+<m_ExpectedValue>0</m_ExpectedValue>
+<m_FormattedActualValue xsi:null="1"/>
+<m_LoadValue>0</m_LoadValue>
+</a7:TimeRangeRecord>
+<a7:TimeRangeRecord id="ref-116" xmlns:a7="http://schemas.microsoft.com/clr/nsassem/SLARules/Analysis.SLA">
+<m_PeriodStartInSec>15</m_PeriodStartInSec>
+<m_PeriodEndInSec>20</m_PeriodEndInSec>
+<m_Status>rulesStatusNoData</m_Status>
+<m_ActualValue>0</m_ActualValue>
+<m_ExpectedValue>0</m_ExpectedValue>
+<m_FormattedActualValue xsi:null="1"/>
+<m_LoadValue>0</m_LoadValue>
+</a7:TimeRangeRecord>
+<a7:TimeRangeRecord id="ref-117" xmlns:a7="http://schemas.microsoft.com/clr/nsassem/SLARules/Analysis.SLA">
+<m_PeriodStartInSec>20</m_PeriodStartInSec>
+<m_PeriodEndInSec>25</m_PeriodEndInSec>
+<m_Status>rulesStatusNoData</m_Status>
+<m_ActualValue>0</m_ActualValue>
+<m_ExpectedValue>0</m_ExpectedValue>
+<m_FormattedActualValue xsi:null="1"/>
+<m_LoadValue>0</m_LoadValue>
+</a7:TimeRangeRecord>
+<a7:TimeRangeRecord id="ref-118" xmlns:a7="http://schemas.microsoft.com/clr/nsassem/SLARules/Analysis.SLA">
+<m_PeriodStartInSec>25</m_PeriodStartInSec>
+<m_PeriodEndInSec>30</m_PeriodEndInSec>
+<m_Status>rulesStatusNoData</m_Status>
+<m_ActualValue>0</m_ActualValue>
+<m_ExpectedValue>0</m_ExpectedValue>
+<m_FormattedActualValue xsi:null="1"/>
+<m_LoadValue>0</m_LoadValue>
+</a7:TimeRangeRecord>
+<a7:TimeRangeRecord id="ref-119" xmlns:a7="http://schemas.microsoft.com/clr/nsassem/SLARules/Analysis.SLA">
+<m_PeriodStartInSec>30</m_PeriodStartInSec>
+<m_PeriodEndInSec>35</m_PeriodEndInSec>
+<m_Status>rulesStatusNoData</m_Status>
+<m_ActualValue>0</m_ActualValue>
+<m_ExpectedValue>0</m_ExpectedValue>
+<m_FormattedActualValue xsi:null="1"/>
+<m_LoadValue>0</m_LoadValue>
+</a7:TimeRangeRecord>
+<a7:TimeRangeRecord id="ref-120" xmlns:a7="http://schemas.microsoft.com/clr/nsassem/SLARules/Analysis.SLA">
+<m_PeriodStartInSec>35</m_PeriodStartInSec>
+<m_PeriodEndInSec>40</m_PeriodEndInSec>
+<m_Status>rulesStatusNoData</m_Status>
+<m_ActualValue>0</m_ActualValue>
+<m_ExpectedValue>0</m_ExpectedValue>
+<m_FormattedActualValue xsi:null="1"/>
+<m_LoadValue>0</m_LoadValue>
+</a7:TimeRangeRecord>
+<a7:TimeRangeRecord id="ref-121" xmlns:a7="http://schemas.microsoft.com/clr/nsassem/SLARules/Analysis.SLA">
+<m_PeriodStartInSec>40</m_PeriodStartInSec>
+<m_PeriodEndInSec>45</m_PeriodEndInSec>
+<m_Status>rulesStatusNoData</m_Status>
+<m_ActualValue>0</m_ActualValue>
+<m_ExpectedValue>0</m_ExpectedValue>
+<m_FormattedActualValue xsi:null="1"/>
+<m_LoadValue>0</m_LoadValue>
+</a7:TimeRangeRecord>
+<a7:TimeRangeRecord id="ref-122" xmlns:a7="http://schemas.microsoft.com/clr/nsassem/SLARules/Analysis.SLA">
+<m_PeriodStartInSec>45</m_PeriodStartInSec>
+<m_PeriodEndInSec>50</m_PeriodEndInSec>
+<m_Status>rulesStatusNoData</m_Status>
+<m_ActualValue>0</m_ActualValue>
+<m_ExpectedValue>0</m_ExpectedValue>
+<m_FormattedActualValue xsi:null="1"/>
+<m_LoadValue>0</m_LoadValue>
+</a7:TimeRangeRecord>
+<a7:TimeRangeRecord id="ref-123" xmlns:a7="http://schemas.microsoft.com/clr/nsassem/SLARules/Analysis.SLA">
+<m_PeriodStartInSec>50</m_PeriodStartInSec>
+<m_PeriodEndInSec>55</m_PeriodEndInSec>
+<m_Status>rulesStatusNoData</m_Status>
+<m_ActualValue>0</m_ActualValue>
+<m_ExpectedValue>0</m_ExpectedValue>
+<m_FormattedActualValue xsi:null="1"/>
+<m_LoadValue>0</m_LoadValue>
+</a7:TimeRangeRecord>
+<a7:TimeRangeRecord id="ref-124" xmlns:a7="http://schemas.microsoft.com/clr/nsassem/SLARules/Analysis.SLA">
+<m_PeriodStartInSec>55</m_PeriodStartInSec>
+<m_PeriodEndInSec>60</m_PeriodEndInSec>
+<m_Status>rulesStatusNoData</m_Status>
+<m_ActualValue>0</m_ActualValue>
+<m_ExpectedValue>0</m_ExpectedValue>
+<m_FormattedActualValue xsi:null="1"/>
+<m_LoadValue>0</m_LoadValue>
+</a7:TimeRangeRecord>
+<a7:TimeRangeRecord id="ref-125" xmlns:a7="http://schemas.microsoft.com/clr/nsassem/SLARules/Analysis.SLA">
+<m_PeriodStartInSec>60</m_PeriodStartInSec>
+<m_PeriodEndInSec>65</m_PeriodEndInSec>
+<m_Status>rulesStatusNoData</m_Status>
+<m_ActualValue>0</m_ActualValue>
+<m_ExpectedValue>0</m_ExpectedValue>
+<m_FormattedActualValue xsi:null="1"/>
+<m_LoadValue>0</m_LoadValue>
+</a7:TimeRangeRecord>
+<a7:TimeRangeRecord id="ref-126" xmlns:a7="http://schemas.microsoft.com/clr/nsassem/SLARules/Analysis.SLA">
+<m_PeriodStartInSec>65</m_PeriodStartInSec>
+<m_PeriodEndInSec>70</m_PeriodEndInSec>
+<m_Status>rulesStatusNoData</m_Status>
+<m_ActualValue>0</m_ActualValue>
+<m_ExpectedValue>0</m_ExpectedValue>
+<m_FormattedActualValue xsi:null="1"/>
+<m_LoadValue>0</m_LoadValue>
+</a7:TimeRangeRecord>
+<a7:TimeRangeRecord id="ref-127" xmlns:a7="http://schemas.microsoft.com/clr/nsassem/SLARules/Analysis.SLA">
+<m_PeriodStartInSec>70</m_PeriodStartInSec>
+<m_PeriodEndInSec>75</m_PeriodEndInSec>
+<m_Status>rulesStatusNoData</m_Status>
+<m_ActualValue>0</m_ActualValue>
+<m_ExpectedValue>0</m_ExpectedValue>
+<m_FormattedActualValue xsi:null="1"/>
+<m_LoadValue>0</m_LoadValue>
+</a7:TimeRangeRecord>
+<a7:TimeRangeRecord id="ref-128" xmlns:a7="http://schemas.microsoft.com/clr/nsassem/SLARules/Analysis.SLA">
+<m_PeriodStartInSec>75</m_PeriodStartInSec>
+<m_PeriodEndInSec>80</m_PeriodEndInSec>
+<m_Status>rulesStatusNoData</m_Status>
+<m_ActualValue>0</m_ActualValue>
+<m_ExpectedValue>0</m_ExpectedValue>
+<m_FormattedActualValue xsi:null="1"/>
+<m_LoadValue>0</m_LoadValue>
+</a7:TimeRangeRecord>
+<a7:TimeRangeRecord id="ref-129" xmlns:a7="http://schemas.microsoft.com/clr/nsassem/SLARules/Analysis.SLA">
+<m_PeriodStartInSec>80</m_PeriodStartInSec>
+<m_PeriodEndInSec>85</m_PeriodEndInSec>
+<m_Status>rulesStatusNoData</m_Status>
+<m_ActualValue>0</m_ActualValue>
+<m_ExpectedValue>0</m_ExpectedValue>
+<m_FormattedActualValue xsi:null="1"/>
+<m_LoadValue>0</m_LoadValue>
+</a7:TimeRangeRecord>
+<a7:TimeRangeRecord id="ref-130" xmlns:a7="http://schemas.microsoft.com/clr/nsassem/SLARules/Analysis.SLA">
+<m_PeriodStartInSec>85</m_PeriodStartInSec>
+<m_PeriodEndInSec>90</m_PeriodEndInSec>
+<m_Status>rulesStatusNoData</m_Status>
+<m_ActualValue>0</m_ActualValue>
+<m_ExpectedValue>0</m_ExpectedValue>
+<m_FormattedActualValue xsi:null="1"/>
+<m_LoadValue>0</m_LoadValue>
+</a7:TimeRangeRecord>
+<a7:TimeRangeRecord id="ref-131" xmlns:a7="http://schemas.microsoft.com/clr/nsassem/SLARules/Analysis.SLA">
+<m_PeriodStartInSec>90</m_PeriodStartInSec>
+<m_PeriodEndInSec>95</m_PeriodEndInSec>
+<m_Status>rulesStatusNoData</m_Status>
+<m_ActualValue>0</m_ActualValue>
+<m_ExpectedValue>0</m_ExpectedValue>
+<m_FormattedActualValue xsi:null="1"/>
+<m_LoadValue>0</m_LoadValue>
+</a7:TimeRangeRecord>
+<a7:TimeRangeRecord id="ref-132" xmlns:a7="http://schemas.microsoft.com/clr/nsassem/SLARules/Analysis.SLA">
+<m_PeriodStartInSec>95</m_PeriodStartInSec>
+<m_PeriodEndInSec>100</m_PeriodEndInSec>
+<m_Status>rulesStatusNoData</m_Status>
+<m_ActualValue>0</m_ActualValue>
+<m_ExpectedValue>0</m_ExpectedValue>
+<m_FormattedActualValue xsi:null="1"/>
+<m_LoadValue>0</m_LoadValue>
+</a7:TimeRangeRecord>
+<a7:TimeRangeRecord id="ref-133" xmlns:a7="http://schemas.microsoft.com/clr/nsassem/SLARules/Analysis.SLA">
+<m_PeriodStartInSec>100</m_PeriodStartInSec>
+<m_PeriodEndInSec>105</m_PeriodEndInSec>
+<m_Status>rulesStatusNoData</m_Status>
+<m_ActualValue>0</m_ActualValue>
+<m_ExpectedValue>0</m_ExpectedValue>
+<m_FormattedActualValue xsi:null="1"/>
+<m_LoadValue>0</m_LoadValue>
+</a7:TimeRangeRecord>
+<a7:TimeRangeRecord id="ref-134" xmlns:a7="http://schemas.microsoft.com/clr/nsassem/SLARules/Analysis.SLA">
+<m_PeriodStartInSec>105</m_PeriodStartInSec>
+<m_PeriodEndInSec>110</m_PeriodEndInSec>
+<m_Status>rulesStatusNoData</m_Status>
+<m_ActualValue>0</m_ActualValue>
+<m_ExpectedValue>0</m_ExpectedValue>
+<m_FormattedActualValue xsi:null="1"/>
+<m_LoadValue>0</m_LoadValue>
+</a7:TimeRangeRecord>
+<a7:TimeRangeRecord id="ref-135" xmlns:a7="http://schemas.microsoft.com/clr/nsassem/SLARules/Analysis.SLA">
+<m_PeriodStartInSec>110</m_PeriodStartInSec>
+<m_PeriodEndInSec>115</m_PeriodEndInSec>
+<m_Status>rulesStatusNoData</m_Status>
+<m_ActualValue>0</m_ActualValue>
+<m_ExpectedValue>0</m_ExpectedValue>
+<m_FormattedActualValue xsi:null="1"/>
+<m_LoadValue>0</m_LoadValue>
+</a7:TimeRangeRecord>
+<a7:TimeRangeRecord id="ref-136" xmlns:a7="http://schemas.microsoft.com/clr/nsassem/SLARules/Analysis.SLA">
+<m_PeriodStartInSec>115</m_PeriodStartInSec>
+<m_PeriodEndInSec>120</m_PeriodEndInSec>
+<m_Status>rulesStatusNoData</m_Status>
+<m_ActualValue>0</m_ActualValue>
+<m_ExpectedValue>0</m_ExpectedValue>
+<m_FormattedActualValue xsi:null="1"/>
+<m_LoadValue>0</m_LoadValue>
+</a7:TimeRangeRecord>
+<a7:TimeRangeRecord id="ref-137" xmlns:a7="http://schemas.microsoft.com/clr/nsassem/SLARules/Analysis.SLA">
+<m_PeriodStartInSec>120</m_PeriodStartInSec>
+<m_PeriodEndInSec>125</m_PeriodEndInSec>
+<m_Status>rulesStatusNoData</m_Status>
+<m_ActualValue>0</m_ActualValue>
+<m_ExpectedValue>0</m_ExpectedValue>
+<m_FormattedActualValue xsi:null="1"/>
+<m_LoadValue>0</m_LoadValue>
+</a7:TimeRangeRecord>
+<a7:TimeRangeRecord id="ref-138" xmlns:a7="http://schemas.microsoft.com/clr/nsassem/SLARules/Analysis.SLA">
+<m_PeriodStartInSec>125</m_PeriodStartInSec>
+<m_PeriodEndInSec>130</m_PeriodEndInSec>
+<m_Status>rulesStatusNoData</m_Status>
+<m_ActualValue>0</m_ActualValue>
+<m_ExpectedValue>0</m_ExpectedValue>
+<m_FormattedActualValue xsi:null="1"/>
+<m_LoadValue>0</m_LoadValue>
+</a7:TimeRangeRecord>
+<a7:TimeRangeRecord id="ref-139" xmlns:a7="http://schemas.microsoft.com/clr/nsassem/SLARules/Analysis.SLA">
+<m_PeriodStartInSec>130</m_PeriodStartInSec>
+<m_PeriodEndInSec>135</m_PeriodEndInSec>
+<m_Status>rulesStatusNoData</m_Status>
+<m_ActualValue>0</m_ActualValue>
+<m_ExpectedValue>0</m_ExpectedValue>
+<m_FormattedActualValue xsi:null="1"/>
+<m_LoadValue>0</m_LoadValue>
+</a7:TimeRangeRecord>
+<a7:TimeRangeRecord id="ref-140" xmlns:a7="http://schemas.microsoft.com/clr/nsassem/SLARules/Analysis.SLA">
+<m_PeriodStartInSec>135</m_PeriodStartInSec>
+<m_PeriodEndInSec>140</m_PeriodEndInSec>
+<m_Status>rulesStatusNoData</m_Status>
+<m_ActualValue>0</m_ActualValue>
+<m_ExpectedValue>0</m_ExpectedValue>
+<m_FormattedActualValue xsi:null="1"/>
+<m_LoadValue>0</m_LoadValue>
+</a7:TimeRangeRecord>
+<a7:TimeRangeRecord id="ref-141" xmlns:a7="http://schemas.microsoft.com/clr/nsassem/SLARules/Analysis.SLA">
+<m_PeriodStartInSec>140</m_PeriodStartInSec>
+<m_PeriodEndInSec>145</m_PeriodEndInSec>
+<m_Status>rulesStatusNoData</m_Status>
+<m_ActualValue>0</m_ActualValue>
+<m_ExpectedValue>0</m_ExpectedValue>
+<m_FormattedActualValue xsi:null="1"/>
+<m_LoadValue>0</m_LoadValue>
+</a7:TimeRangeRecord>
+<a7:TimeRangeRecord id="ref-142" xmlns:a7="http://schemas.microsoft.com/clr/nsassem/SLARules/Analysis.SLA">
+<m_PeriodStartInSec>145</m_PeriodStartInSec>
+<m_PeriodEndInSec>150</m_PeriodEndInSec>
+<m_Status>rulesStatusNoData</m_Status>
+<m_ActualValue>0</m_ActualValue>
+<m_ExpectedValue>0</m_ExpectedValue>
+<m_FormattedActualValue xsi:null="1"/>
+<m_LoadValue>0</m_LoadValue>
+</a7:TimeRangeRecord>
+<a7:TimeRangeRecord id="ref-143" xmlns:a7="http://schemas.microsoft.com/clr/nsassem/SLARules/Analysis.SLA">
+<m_PeriodStartInSec>150</m_PeriodStartInSec>
+<m_PeriodEndInSec>155</m_PeriodEndInSec>
+<m_Status>rulesStatusNoData</m_Status>
+<m_ActualValue>0</m_ActualValue>
+<m_ExpectedValue>0</m_ExpectedValue>
+<m_FormattedActualValue xsi:null="1"/>
+<m_LoadValue>0</m_LoadValue>
+</a7:TimeRangeRecord>
+<a7:TimeRangeRecord id="ref-144" xmlns:a7="http://schemas.microsoft.com/clr/nsassem/SLARules/Analysis.SLA">
+<m_PeriodStartInSec>155</m_PeriodStartInSec>
+<m_PeriodEndInSec>160</m_PeriodEndInSec>
+<m_Status>rulesStatusNoData</m_Status>
+<m_ActualValue>0</m_ActualValue>
+<m_ExpectedValue>0</m_ExpectedValue>
+<m_FormattedActualValue xsi:null="1"/>
+<m_LoadValue>0</m_LoadValue>
+</a7:TimeRangeRecord>
+<a7:TimeRangeRecord id="ref-145" xmlns:a7="http://schemas.microsoft.com/clr/nsassem/SLARules/Analysis.SLA">
+<m_PeriodStartInSec>160</m_PeriodStartInSec>
+<m_PeriodEndInSec>165</m_PeriodEndInSec>
+<m_Status>rulesStatusNoData</m_Status>
+<m_ActualValue>0</m_ActualValue>
+<m_ExpectedValue>0</m_ExpectedValue>
+<m_FormattedActualValue xsi:null="1"/>
+<m_LoadValue>0</m_LoadValue>
+</a7:TimeRangeRecord>
+<a7:TimeRangeRecord id="ref-146" xmlns:a7="http://schemas.microsoft.com/clr/nsassem/SLARules/Analysis.SLA">
+<m_PeriodStartInSec>165</m_PeriodStartInSec>
+<m_PeriodEndInSec>170</m_PeriodEndInSec>
+<m_Status>rulesStatusNoData</m_Status>
+<m_ActualValue>0</m_ActualValue>
+<m_ExpectedValue>0</m_ExpectedValue>
+<m_FormattedActualValue xsi:null="1"/>
+<m_LoadValue>0</m_LoadValue>
+</a7:TimeRangeRecord>
+<a7:TimeRangeRecord id="ref-147" xmlns:a7="http://schemas.microsoft.com/clr/nsassem/SLARules/Analysis.SLA">
+<m_PeriodStartInSec>170</m_PeriodStartInSec>
+<m_PeriodEndInSec>175</m_PeriodEndInSec>
+<m_Status>rulesStatusNoData</m_Status>
+<m_ActualValue>0</m_ActualValue>
+<m_ExpectedValue>0</m_ExpectedValue>
+<m_FormattedActualValue xsi:null="1"/>
+<m_LoadValue>0</m_LoadValue>
+</a7:TimeRangeRecord>
+<a7:TimeRangeRecord id="ref-148" xmlns:a7="http://schemas.microsoft.com/clr/nsassem/SLARules/Analysis.SLA">
+<m_PeriodStartInSec>175</m_PeriodStartInSec>
+<m_PeriodEndInSec>180</m_PeriodEndInSec>
+<m_Status>rulesStatusNoData</m_Status>
+<m_ActualValue>0</m_ActualValue>
+<m_ExpectedValue>0</m_ExpectedValue>
+<m_FormattedActualValue xsi:null="1"/>
+<m_LoadValue>0</m_LoadValue>
+</a7:TimeRangeRecord>
+<a7:TimeRangeRecord id="ref-149" xmlns:a7="http://schemas.microsoft.com/clr/nsassem/SLARules/Analysis.SLA">
+<m_PeriodStartInSec>180</m_PeriodStartInSec>
+<m_PeriodEndInSec>184</m_PeriodEndInSec>
+<m_Status>rulesStatusNoData</m_Status>
+<m_ActualValue>0</m_ActualValue>
+<m_ExpectedValue>0</m_ExpectedValue>
+<m_FormattedActualValue xsi:null="1"/>
+<m_LoadValue>0</m_LoadValue>
+</a7:TimeRangeRecord>
+<a9:SLAThreshold id="ref-150" xmlns:a9="http://schemas.microsoft.com/clr/nsassem/SLAThresholds/Analysis.SLA">
+<m_StartLoadValue>-INF</m_StartLoadValue>
+<m_EndLoadValue>INF</m_EndLoadValue>
+<m_ThresholdValue>1</m_ThresholdValue>
+</a9:SLAThreshold>
+<a9:SLAThreshold id="ref-151" xmlns:a9="http://schemas.microsoft.com/clr/nsassem/SLAThresholds/Analysis.SLA">
+<m_StartLoadValue>-INF</m_StartLoadValue>
+<m_EndLoadValue>INF</m_EndLoadValue>
+<m_ThresholdValue>1</m_ThresholdValue>
+</a9:SLAThreshold>
+<a9:SLAThreshold id="ref-152" xmlns:a9="http://schemas.microsoft.com/clr/nsassem/SLAThresholds/Analysis.SLA">
+<m_StartLoadValue>-INF</m_StartLoadValue>
+<m_EndLoadValue>INF</m_EndLoadValue>
+<m_ThresholdValue>1</m_ThresholdValue>
+</a9:SLAThreshold>
+</SOAP-ENV:Body>
+</SOAP-ENV:Envelope>

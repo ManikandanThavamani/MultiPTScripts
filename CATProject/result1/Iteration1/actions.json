@@ -1,0 +1,35 @@
+[
+    {
+        "actionName": "Action",
+        "steps": [
+            {
+                "stepId": "STEP1",
+                "stepName": "Submit Data: Authorization",
+                "infFile": "t1.inf",
+                "time": 1779166003547
+            },
+            {
+                "stepId": "STEP2",
+                "stepName": "Custom Request: configAPI",
+                "infFile": "t2.inf",
+                "time": 1779166005956
+            }
+        ],
+        "transactions": [
+            {
+                "transactionName": "TR01_GeneratingAuthCode",
+                "rawStartTime": 1779166002201,
+                "rawEndTime": 1779166003589,
+                "thinkTime": 0.0,
+                "wastedTime": 0.05879068374633789
+            },
+            {
+                "transactionName": "TR02_ActualAPI",
+                "rawStartTime": 1779166003604,
+                "rawEndTime": 1779166005971,
+                "thinkTime": 0.0,
+                "wastedTime": 0.004348039627075195
+            }
+        ]
+    }
+]

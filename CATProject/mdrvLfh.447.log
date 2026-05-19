@@ -1,0 +1,48 @@
+Virtual User Script started at: 15-07-2025 17:00:18	[MsgId: MMSG-15967]
+Starting action vuser_init.	[MsgId: MMSG-15919]
+Web Services replay version 2023.0.0 for Windows 11; Toolkit: "WCF"; build 506	[MsgId: MMSG-108715]
+Runtime Settings file: "C:\Users\mani_\AppData\Local\Temp\lr5tmpdiruVA.450\lrcfg767.451\cfgq4g.452"	[MsgId: MMSG-108714]
+Vuser directory: "G:\VugenScripts\CATProject"	[MsgId: MMSG-108713]
+Vuser output directory: "G:\VugenScripts\CATProject"	[MsgId: MMSG-108712]
+LOCAL start date/time : 2025-07-15 17:00:18	[MsgId: MMSG-108711]
+Ending action vuser_init.	[MsgId: MMSG-15918]
+Running Vuser...	[MsgId: MMSG-15964]
+Starting iteration 1.	[MsgId: MMSG-15968]
+Maximum number of concurrent connections per server: 4  	[MsgId: MMSG-26989]
+Starting action Action.	[MsgId: MMSG-15919]
+Action.c(3): web_set_max_html_param_len started  	[MsgId: MMSG-26355]
+Action.c(3): web_set_max_html_param_len was successful  	[MsgId: MMSG-26392]
+Action.c(17): web_reg_save_param_ex started  	[MsgId: MMSG-26355]
+Action.c(17): Registering web_reg_save_param_ex was successful  	[MsgId: MMSG-26390]
+Action.c(25): web_submit_data("Authorization") started  	[MsgId: MMSG-26355]
+Action.c(25): t=1483ms: 372-byte response headers for "https://fedloginqa.cat.com/as/token.oauth2" (RelFrameId=1, Internal ID=1)
+Action.c(25):     HTTP/1.1 200 OK\r\n
+Action.c(25):     Content-Type: application/json;charset=utf-8\r\n
+Action.c(25):     Connection: close\r\n
+Action.c(25):     Date: Tue, 15 Jul 2025 11:30:19 GMT\r\n
+Action.c(25):     X-Frame-Options: SAMEORIGIN\r\n
+Action.c(25):     Referrer-Policy: origin\r\n
+Action.c(25):     Cache-Control: no-cache, no-store\r\n
+Action.c(25):     Pragma: no-cache\r\n
+Action.c(25):     Expires: Thu, 01 Jan 1970 00:00:00 GMT\r\n
+Action.c(25):     Set-Cookie: PF=NhHYwKtaDjvC6byTuQrtQl; Path=/; Secure; HttpOnly; SameSite=None\r\n
+Action.c(25):     rdwr_response: allowed\r\n
+Action.c(25):     \r\n
+Action.c(25): t=1483ms: 638-byte response body for "https://fedloginqa.cat.com/as/token.oauth2" (RelFrameId=1, Internal ID=1)
+Action.c(25):     {"access_token":"eyJhbGciOiJSUzI1NiIsImtpZCI6IjM3IiwicGkuYXRtIjoiNSJ9.eyJzY29wZSI6W10sImF1
+Action.c(25):     dGhvcml6YXRpb25fZGV0YWlscyI6W10sImNsaWVudF9pZCI6IkNBVC1SREVfY2NfY2xpZW50IiwiaXNzIjoiaHR0cH
+Action.c(25):     M6Ly9mZWRsb2dpbnFhLmNhdC5jb20iLCJhdWQiOiJiYXNpYyIsImV4cCI6MTc1MjU4MjYxOX0.WYKNW_ULHuigk-jQ
+Action.c(25):     71YsXG8QUBjbYU1KbhINEVOlXhrd6nDusgep3KhMpLqqNvVltXaVMUr1C46SKA10_MJUcJaQ0MCDjWwenGt0mMHvge
+Action.c(25):     oe02g5M5hKe1OmzPOh-fDponYQ2IYhnQtZaslrcTaRTinqx-gVa47gVsUxEy80vwqzKY58km-YnIm6FkHO5T7Yjb4O
+Action.c(25):     g93j1Qf6FBbUXSgKBqqMT0Fp6-gF93Z9RLdzwq2H69RUrcxxsaD4HzrGej91LRND_ODZ-v6lPMYw-r61lJMe0g1KVI
+Action.c(25):     gECP2H2FgYSX3lruWpxPjMQYmF9EIM5fzI3Ls0ySPZ5_sWITbsO1r0iA","token_type":"Bearer","expires_i
+Action.c(25):     n":3599}
+Action.c(25): Notify: Saving Parameter "Auth_token = eyJhbGciOiJSUzI1NiIsImtpZCI6IjM3IiwicGkuYXRtIjoiNSJ9.eyJzY29wZSI6W10sImF1dGhvcml6YXRpb25fZGV0YWlscyI6W10sImNsaWVudF9pZCI6IkNBVC1SREVfY2NfY2xpZW50IiwiaXNzIjoiaHR0cHM6Ly9mZWRsb2dpbnFhLmNhdC5jb20iLCJhdWQiOiJiYXNpYyIsImV4cCI6MTc1MjU4MjYxOX0.WYKNW_ULHuigk-jQ71YsXG8QUBjbYU1KbhINEVOlXhrd6nDusgep3KhMpLqqNvVltXaVMUr1C46SKA10_MJUcJaQ0MCDjWwenGt0mMHvgeoe02g5M5hKe1OmzPOh-fDponYQ2IYhnQtZaslrcTaRTinqx-gVa47gVsUxEy80vwqzKY58km-YnIm6FkHO5T7Yjb4Og93j1Qf6FBbUXSgKBqqMT0Fp6-gF93Z9RLdzwq2H69RUrcxxsaD4HzrGej91LRND_ODZ-v6lPMYw-r61lJMe0g1KVIgECP2H2FgYSX3lruWpxPjMQYmF9EIM5fzI3Ls0ySPZ5_sWITbsO1r0iA".	[MsgId: MMSG-13798]
+Action.c(25): Error: C interpreter run time error: Action.c (25):  Error -- memory violation : Exception ACCESS_VIOLATION received.	[MsgId: MERR-19890]
+Action was aborted.	[MsgId: MMSG-10694]
+Ending Vuser...	[MsgId: MMSG-15966]
+Starting action vuser_end.	[MsgId: MMSG-15919]
+Ending action vuser_end.	[MsgId: MMSG-15918]
+Vuser Terminated.	[MsgId: MMSG-15963]
+Aborting pending download of URL="https://fedloginqa.cat.com/as/token.oauth2" (RelFrameId=1, Internal ID=1)  	[MsgId: MMSG-27649]
+Vuser 0 (thread 30668), ended OK."	[MsgId: MMSG-10695]

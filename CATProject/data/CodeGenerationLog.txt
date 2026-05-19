@@ -1,0 +1,24 @@
+WebServices notify: version 2 (2023.0.0.506)
+****** Start Log Message ******
+Web Recorder version : 2023.0.0.506 
+Recording Mode: HTML-based script
+Recording headers in list:
+	accept-charset
+	accept-encoding
+	accept-language
+	soapaction
+	user-agent
+Not excluding content types
+Do not record this content types as a resource:
+	text/html
+	text/xml
+	application/json
+Reset context between actions
+Record non-HTML elements in current HTML function
+Protocol Type: Multi-WS_SOAP
+
+$$$$$$ End Log Message $$$$$$
+
+Code generation version: 2023.0.0.506
+
+****** Analyze segments filter initialization ******

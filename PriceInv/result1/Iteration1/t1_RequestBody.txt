@@ -1,0 +1,2 @@
+"grant_type=client_credentials&client_id=CAT-RDE_cc_client&client_secret=ZgSi2Zj8DjjVDveA3PIKlh"
+"8axCUkw6NA3BtYov0NHnu4gm78zVrUhyVvwtiPWCSC"

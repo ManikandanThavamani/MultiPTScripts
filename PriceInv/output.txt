@@ -1,0 +1,247 @@
+Virtual User Script started at: 19-05-2026 11:15:45
+Starting action vuser_init.
+Web Turbo Replay of LoadRunner 2023.0.0 (Mar 08 2023 13:11:40)  	[MsgId: MMSG-27143]
+Run mode: HTML  	[MsgId: MMSG-26993]
+Replay user agent: Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.1; Trident/6.0)  	[MsgId: MMSG-26988]
+Vuser directory: "G:\VugenScripts\PriceInv"  	[MsgId: MMSG-27052]
+Vuser output directory: "G:\VugenScripts\PriceInv"  	[MsgId: MMSG-27050]
+Operating system's current working directory: "G:\VugenScripts\PriceInv"  	[MsgId: MMSG-27048]
+UTC (GMT) start date/time   : 2026-05-19 05:45:45  	[MsgId: MMSG-26992]
+LOCAL start date/time       : 2026-05-19 11:15:45  	[MsgId: MMSG-26991]
+Local daylight-Savings-Time : No  	[MsgId: MMSG-26990]
+Some of the Runtime Settings:  	[MsgId: MMSG-27142]
+    Download non-HTML resources: Yes  	[MsgId: MMSG-27018]
+    Verification checks: No  	[MsgId: MMSG-27017]
+    Convert from/to UTF-8: No  	[MsgId: MMSG-27016]
+    Simulate a new user each iteration: Yes  	[MsgId: MMSG-27009]
+    Non-critical item errors as warnings: Yes  	[MsgId: MMSG-27008]
+    HTTP errors as warnings: No  	[MsgId: MMSG-27007]
+    WinInet replay instead of Sockets: No  	[MsgId: MMSG-27006]
+    HTTP version: 1.1  	[MsgId: MMSG-27005]
+    Keep-Alive HTTP connections: Yes  	[MsgId: MMSG-27004]
+    Max self Meta refresh updates: 2  	[MsgId: MMSG-27003]
+    No proxy is used (direct connection to the Internet)  	[MsgId: MMSG-27171]
+    DNS caching: No  	[MsgId: MMSG-27035]
+    Simulate browser cache: Yes  	[MsgId: MMSG-27034]
+        Cache URLs requiring content (e.g., HTMLs): Yes  	[MsgId: MMSG-27033]
+            Additional URLs requiring content: text/xml;text/plain  	[MsgId: MMSG-27032]
+        Check for newer versions every visit to the page: No  	[MsgId: MMSG-27031]
+    Page download timeout (sec): 120  	[MsgId: MMSG-27030]
+    Resource Page Timeout is a Warning: No  	[MsgId: MMSG-27029]
+    ContentCheck enabled: Yes  	[MsgId: MMSG-27028]
+    ContentCheck script-level file: "G:\VugenScripts\PriceInv\LrwiAedScript.xml"  	[MsgId: MMSG-27027]
+    Enable Web Page Breakdown: No  	[MsgId: MMSG-27026]
+    Enable connection data points: Yes  	[MsgId: MMSG-27023]
+    Process socket after reschedule: Yes  	[MsgId: MMSG-27022]
+    Snapshot on error: No  	[MsgId: MMSG-27021]
+    Define each step as a transaction: No  	[MsgId: MMSG-27020]
+    Read beyond Content-Length: No  	[MsgId: MMSG-26994]
+    Parse HTML Content-Type: TEXT  	[MsgId: MMSG-26999]
+    Graph hits per second and HTTP status codes: Yes  	[MsgId: MMSG-26998]
+    Graph response bytes per second: Yes  	[MsgId: MMSG-26997]
+    Graph pages per second: No  	[MsgId: MMSG-26996]
+    Web recorder version ID: 8  	[MsgId: MMSG-26995]
+Ending action vuser_init.
+Running Vuser...
+Starting iteration 1.
+Maximum number of concurrent connections per server: 6  	[MsgId: MMSG-26989]
+Starting action Action.
+Action.c(3): web_set_sockets_option started  	[MsgId: MMSG-26355]
+Action.c(3): web_set_sockets_option was successful  	[MsgId: MMSG-26392]
+Action.c(4): web_set_max_html_param_len started  	[MsgId: MMSG-26355]
+Action.c(4): web_set_max_html_param_len was successful  	[MsgId: MMSG-26392]
+Action.c(5): web_reg_save_param_ex started  	[MsgId: MMSG-26355]
+Action.c(5): Registering web_reg_save_param_ex was successful  	[MsgId: MMSG-26390]
+Action.c(13): web_submit_data("Auth") started  	[MsgId: MMSG-26355]
+Action.c(13): t=224ms: Connecting [0] to host 66.22.6.54:443  	[MsgId: MMSG-26000]
+Action.c(13): t=488ms: Connected socket [0] from 192.168.1.3:24004 to 66.22.6.54:443 in 264 ms  	[MsgId: MMSG-26000]
+Action.c(13): t=491ms: Trying to set SNI with servername fedloginqa.cat.com  	[MsgId: MMSG-26000]
+Action.c(13): t=491ms: Setting SNI was succesful  	[MsgId: MMSG-26000]
+Action.c(13): t=1029ms: 302-byte request headers for "https://fedloginqa.cat.com/as/token.oauth2" (RelFrameId=1, Internal ID=1)
+Action.c(13):     POST /as/token.oauth2 HTTP/1.1\r\n
+Action.c(13):     Content-Type: application/x-www-form-urlencoded\r\n
+Action.c(13):     Cache-Control: no-cache\r\n
+Action.c(13):     User-Agent: Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.1; Trident/6.0)\r\n
+Action.c(13):     Accept-Encoding: gzip, deflate\r\n
+Action.c(13):     Accept: */*\r\n
+Action.c(13):     Connection: Keep-Alive\r\n
+Action.c(13):     Host: fedloginqa.cat.com\r\n
+Action.c(13):     Content-Length: 136\r\n
+Action.c(13):     \r\n
+Action.c(13): t=1034ms: 136-byte request body for "https://fedloginqa.cat.com/as/token.oauth2" (RelFrameId=1, Internal ID=1)
+Action.c(13):     grant_type=client_credentials&client_id=CAT-RDE_cc_client&client_secret=ZgSi2Zj8DjjVDveA3P
+Action.c(13):     IKlh8axCUkw6NA3BtYov0NHnu4gm78zVrUhyVvwtiPWCSC
+Action.c(13): t=1469ms: 483-byte response headers for "https://fedloginqa.cat.com/as/token.oauth2" (RelFrameId=1, Internal ID=1)
+Action.c(13):     HTTP/1.1 200 OK\r\n
+Action.c(13):     Content-Type: application/json\r\n
+Action.c(13):     Transfer-Encoding: chunked\r\n
+Action.c(13):     Connection: keep-alive\r\n
+Action.c(13):     Date: Tue, 19 May 2026 05:45:47 GMT\r\n
+Action.c(13):     X-Frame-Options: SAMEORIGIN\r\n
+Action.c(13):     Referrer-Policy: origin\r\n
+Action.c(13):     Content-Security-Policy: frame-ancestors 'self' https://*.cat.com;\r\n
+Action.c(13):     Cache-Control: no-cache, no-store\r\n
+Action.c(13):     Pragma: no-cache\r\n
+Action.c(13):     Expires: Thu, 01 Jan 1970 00:00:00 GMT\r\n
+Action.c(13):     Set-Cookie: PF=CSBHNrwsUamtEHKnEp0uFY; Path=/; Secure; HttpOnly; SameSite=None\r\n
+Action.c(13):     rdwr_response: allowed\r\n
+Action.c(13):     Content-Encoding: gzip\r\n
+Action.c(13):     \r\n
+Action.c(13): t=1478ms: 5-byte chunked response overhead for "https://fedloginqa.cat.com/as/token.oauth2" (RelFrameId=1, Internal ID=1)
+Action.c(13):     210\r\n
+Action.c(13): t=1478ms: 7-byte chunked response overhead for "https://fedloginqa.cat.com/as/token.oauth2" (RelFrameId=1, Internal ID=1)
+Action.c(13):     \r\n
+Action.c(13):     0\r\n
+Action.c(13):     \r\n
+Action.c(13): t=1478ms: 528-byte ENCODED response body received for "https://fedloginqa.cat.com/as/token.oauth2" (RelFrameId=1, Internal ID=1)
+Action.c(13): t=1480ms: 638-byte DECODED response body for "https://fedloginqa.cat.com/as/token.oauth2" (RelFrameId=1, Internal ID=1)
+Action.c(13):     {"access_token":"eyJhbGciOiJSUzI1NiIsImtpZCI6IjM3IiwicGkuYXRtIjoiNSJ9.eyJzY29wZSI6W10sImF1
+Action.c(13):     dGhvcml6YXRpb25fZGV0YWlscyI6W10sImNsaWVudF9pZCI6IkNBVC1SREVfY2NfY2xpZW50IiwiaXNzIjoiaHR0cH
+Action.c(13):     M6Ly9mZWRsb2dpbnFhLmNhdC5jb20iLCJhdWQiOiJiYXNpYyIsImV4cCI6MTc3OTE3MzE0N30.Tklhaev8nPVv-FHX
+Action.c(13):     VODi8Kke-bQNk1wUymMGYXm9FLI6cCLujgoW-mYCcxQH1VhKi4MD9RarEss9e0Xh2UxoJN7OgR8C0JjGcFyTJKQmbS
+Action.c(13):     SZrIJUuHqvhWiMNkfcUNDbNHhOKnA5WDYPiZa_EVKkbNjRl2FHsUGjF_mRzJdUupUZ9vRSiVX8tdKcWcTJU0SCR_wa
+Action.c(13):     HVZdz3xS5FrLJk2lAbmVC2TmgOcDBETO7VDCYma6FVUOnEiabvbKQtLaShUFKTb2APdkcdHNm10j1Mx5Jok6Xea5eJ
+Action.c(13):     UmqcYJKx_e5QmmDj59NGHeK5sRcS3clnMPfKmqNnftb7vidKI3sDGTRA","token_type":"Bearer","expires_i
+Action.c(13):     n":3599}
+Action.c(13): Notify: Saving Parameter "c_AuthToken = eyJhbGciOiJSUzI1NiIsImtpZCI6IjM3IiwicGkuYXRtIjoiNSJ9.eyJzY29wZSI6W10sImF1dGhvcml6YXRpb25fZGV0YWlscyI6W10sImNsaWVudF9pZCI6IkNBVC1SREVfY2NfY2xpZW50IiwiaXNzIjoiaHR0cHM6Ly9mZWRsb2dpbnFhLmNhdC5jb20iLCJhdWQiOiJiYXNpYyIsImV4cCI6MTc3OTE3MzE0N30.Tklhaev8nPVv-FHXVODi8Kke-bQNk1wUymMGYXm9FLI6cCLujgoW-mYCcxQH1VhKi4MD9RarEss9e0Xh2UxoJN7OgR8C0JjGcFyTJKQmbSSZrIJUuHqvhWiMNkfcUNDbNHhOKnA5WDYPiZa_EVKkbNjRl2FHsUGjF_mRzJdUupUZ9vRSiVX8tdKcWcTJU0SCR_waHVZdz3xS5FrLJk2lAbmVC2TmgOcDBETO7VDCYma6FVUOnEiabvbKQtLaShUFKTb2APdkcdHNm10j1Mx5Jok6Xea5eJUmqcYJKx_e5QmmDj59NGHeK5sRcS3clnMPfKmqNnftb7vidKI3sDGTRA".
+Action.c(13): HTML parsing not performed for Content-Type "application/json" ("ParseHtmlContentType" Runtime Setting is "TEXT"). URL="https://fedloginqa.cat.com/as/token.oauth2"  	[MsgId: MMSG-26547]
+Action.c(13): t=1485ms: Request done "https://fedloginqa.cat.com/as/token.oauth2"  	[MsgId: MMSG-26000]
+Action.c(13): web_submit_data("Auth") was successful, 528 body bytes, 483 header bytes, 12 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(22): web_add_header("Authorization") started  	[MsgId: MMSG-26355]
+Action.c(22): Notify: Parameter Substitution: parameter "c_AuthToken" =  "eyJhbGciOiJSUzI1NiIsImtpZCI6IjM3IiwicGkuYXRtIjoiNSJ9.eyJzY29wZSI6W10sImF1dGhvcml6YXRpb25fZGV0YWlscyI6W10sImNsaWVudF9pZCI6IkNBVC1SREVfY2NfY2xpZW50IiwiaXNzIjoiaHR0cHM6Ly9mZWRsb2dpbnFhLmNhdC5jb20iLCJhdWQiOiJiYXNpYyIsImV4cCI6MTc3OTE3MzE0N30.Tklhaev8nPVv-FHXVODi8Kke-bQNk1wUymMGYXm9FLI6cCLujgoW-mYCcxQH1VhKi4MD9RarEss9e0Xh2UxoJN7OgR8C0JjGcFyTJKQmbSSZrIJUuHqvhWiMNkfcUNDbNHhOKnA5WDYPiZa_EVKkbNjRl2FHsUGjF_mRzJdUupUZ9vRSiVX8tdKcWcTJU0SCR_waHVZdz3xS5FrLJk2lAbmVC2TmgOcDBETO7VDCYma6FVUOnEiabvbKQtLaShUFKTb2APdkcdHNm10j1Mx5Jok6Xea5eJUmqcYJKx_e5QmmDj59NGHeK5sRcS3clnMPfKmqNnftb7vidKI3sDGTRA"
+Action.c(22): Warning -26593: The header being added may cause unpredictable results if applied to ALL the URLs generated on behalf of the next script function. It will apply to the primary URL only.  	[MsgId: MWAR-26593]
+Action.c(22): "Authorization: Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IjM3IiwicGkuYXRtIjoiNSJ9.eyJzY29wZSI6W10sImF1dGhvcml6YXRpb25fZGV0YWlscyI6W10sImNsaWVudF9pZCI6IkNBVC1SREVfY2NfY2xpZW50IiwiaXNzIjoiaHR0cHM6Ly9mZWRsb2dpbnFhLmNhdC5jb20iLCJhdWQiOiJiYXNpYyIsImV4cCI6MTc3OTE3MzE0N30.Tklhaev8nPVv-FHXVODi8Kke-bQNk1wUymMGYXm9FLI6cCLujgoW-mYCcxQH1VhKi4MD9RarEss9e0Xh2UxoJN7OgR8C0JjGcFyTJKQmbSSZrIJUuHqvhWiMNkfcUNDbNHhOKnA5WDYPiZa_EVKkbNjRl2FHsUGjF_mRzJdUupUZ9vRSiVX8tdKcWcTJU0SCR_waHVZdz3xS5FrLJk2lAbmVC2TmgOcDBETO7VDCYma6FVUOnEiabvbKQtLaShUFKTb2APdkcdHNm10j1Mx5Jok6Xea5eJUmqcYJKx_e5QmmDj59NGHeK5sRcS3clnMPfKmqNnftb7vidKI3sDGTRA" header registered for adding to requests from the immediately following Action function  	[MsgId: MMSG-26505]
+Action.c(22): web_add_header("Authorization") highest severity level was "warning"  	[MsgId: MMSG-26391]
+Action.c(23): web_add_header("Content-Type") started  	[MsgId: MMSG-26355]
+Action.c(23): Warning -26593: The header being added may cause unpredictable results if applied to ALL the URLs generated on behalf of the next script function. It will apply to the primary URL only.  	[MsgId: MWAR-26593]
+Action.c(23): "Content-Type: application/json" header registered for adding to requests from the immediately following Action function  	[MsgId: MMSG-26505]
+Action.c(23): web_add_header("Content-Type") highest severity level was "warning"  	[MsgId: MMSG-26391]
+Action.c(25): web_custom_request("ActualPriceAPI") started  	[MsgId: MMSG-26355]
+Action.c(25): Warning: The string '"dealerCode": "H160","rdeSalesModels": ["255"],"region": "ADSD-N","locale": "en_US"' with parameter delimiters is not a parameter.
+Action.c(25): t=1684ms: Closed connection [0] to fedloginqa.cat.com:443 after completing 1 request(s)  	[MsgId: MMSG-26000]
+Action.c(25): t=1684ms: Connecting [0] to host 35.93.39.179:443  	[MsgId: MMSG-26000]
+Action.c(25): t=1923ms: Connected socket [0] from 192.168.1.3:24005 to 35.93.39.179:443 in 239 ms  	[MsgId: MMSG-26000]
+Action.c(25): t=1923ms: Trying to set SNI with servername api-performance.cat.com  	[MsgId: MMSG-26000]
+Action.c(25): t=1923ms: Setting SNI was succesful  	[MsgId: MMSG-26000]
+Action.c(25): t=2405ms: 988-byte request headers for "https://api-performance.cat.com/rde/dealerSalesModels/v1/dealer/priceAndInventories/search" (RelFrameId=1, Internal ID=2)
+Action.c(25):     POST /rde/dealerSalesModels/v1/dealer/priceAndInventories/search HTTP/1.1\r\n
+Action.c(25):     Authorization: Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IjM3IiwicGkuYXRtIjoiNSJ9.eyJzY29wZSI6W10
+Action.c(25):     sImF1dGhvcml6YXRpb25fZGV0YWlscyI6W10sImNsaWVudF9pZCI6IkNBVC1SREVfY2NfY2xpZW50IiwiaXNzIjoia
+Action.c(25):     HR0cHM6Ly9mZWRsb2dpbnFhLmNhdC5jb20iLCJhdWQiOiJiYXNpYyIsImV4cCI6MTc3OTE3MzE0N30.Tklhaev8nPV
+Action.c(25):     v-FHXVODi8Kke-bQNk1wUymMGYXm9FLI6cCLujgoW-mYCcxQH1VhKi4MD9RarEss9e0Xh2UxoJN7OgR8C0JjGcFyTJ
+Action.c(25):     KQmbSSZrIJUuHqvhWiMNkfcUNDbNHhOKnA5WDYPiZa_EVKkbNjRl2FHsUGjF_mRzJdUupUZ9vRSiVX8tdKcWcTJU0S
+Action.c(25):     CR_waHVZdz3xS5FrLJk2lAbmVC2TmgOcDBETO7VDCYma6FVUOnEiabvbKQtLaShUFKTb2APdkcdHNm10j1Mx5Jok6X
+Action.c(25):     ea5eJUmqcYJKx_e5QmmDj59NGHeK5sRcS3clnMPfKmqNnftb7vidKI3sDGTRA\r\n
+Action.c(25):     Content-Type: application/json\r\n
+Action.c(25):     Cache-Control: no-cache\r\n
+Action.c(25):     Referer: https://fedloginqa.cat.com/as/token.oauth2\r\n
+Action.c(25):     User-Agent: Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.1; Trident/6.0)\r\n
+Action.c(25):     Accept-Encoding: gzip, deflate\r\n
+Action.c(25):     Accept: */*\r\n
+Action.c(25):     Connection: Keep-Alive\r\n
+Action.c(25):     Host: api-performance.cat.com\r\n
+Action.c(25):     Content-Length: 85\r\n
+Action.c(25):     \r\n
+Action.c(25): t=2405ms: 85-byte request body for "https://api-performance.cat.com/rde/dealerSalesModels/v1/dealer/priceAndInventories/search" (RelFrameId=1, Internal ID=2)
+Action.c(25):     {"dealerCode": "H160","rdeSalesModels": ["255"],"region": "ADSD-N","locale": "en_US"}
+Action.c(25): t=3469ms: 1165-byte response headers for "https://api-performance.cat.com/rde/dealerSalesModels/v1/dealer/priceAndInventories/search" (RelFrameId=1, Internal ID=2)
+Action.c(25):     HTTP/1.1 200 \r\n
+Action.c(25):     Date: Tue, 19 May 2026 05:45:49 GMT\r\n
+Action.c(25):     Content-Type: application/json;charset=UTF-8\r\n
+Action.c(25):     Transfer-Encoding: chunked\r\n
+Action.c(25):     Connection: keep-alive\r\n
+Action.c(25):     X-Frame-Options: SAMEORIGIN\r\n
+Action.c(25):     Vary: Origin,Accept-Encoding,User-Agent,Access-Control-Request-Method,Access-Control-Reque
+Action.c(25):     st-Headers\r\n
+Action.c(25):     X-Anonymous-Consents: %5B%5D\r\n
+Action.c(25):     Cache-Control: no-cache, no-store, max-age=0, must-revalidate\r\n
+Action.c(25):     Pragma: no-cache\r\n
+Action.c(25):     Expires: 0\r\n
+Action.c(25):     Strict-Transport-Security: max-age=63072000; includeSubDomains; preload\r\n
+Action.c(25):     X-XSS-Protection: 1; mode=block\r\n
+Action.c(25):     X-Content-Type-Options: nosniff\r\n
+Action.c(25):     Content-Encoding: gzip\r\n
+Action.c(25):     Set-Cookie: ROUTE=.api-5f54cc85f5-cq4gm; Path=/; Secure; HttpOnly; SameSite=None\r\n
+Action.c(25):     X-SAP-Pad: 83\r\n
+Action.c(25):     Access-Control-Allow-Origin: *\r\n
+Action.c(25):     Access-Control-Allow-Headers: origin, x-requested-with, accept, content-type, authorizatio
+Action.c(25):     n, X-HTTP-Method-Override, x-cat-user-preferences, X-Cat-API-Tracking-Id, Cache-Control, x
+Action.c(25):     -csrf-token, X-Cat-Development, x-cat-ent-application-module\r\n
+Action.c(25):     Access-Control-Max-Age: 3628800\r\n
+Action.c(25):     Access-Control-Allow-Methods: GET, PUT, POST, DELETE, HEAD, PATCH\r\n
+Action.c(25):     Access-Control-Expose-Headers: Location, X-Cat-API-Tracking-Id\r\n
+Action.c(25):     X-Cat-API-Tracking-Id: 2f20407b-03b6-4fd1-8a8c-d0640dfe30d4\r\n
+Action.c(25):     \r\n
+Action.c(25): t=3471ms: 3-byte chunked response overhead for "https://api-performance.cat.com/rde/dealerSalesModels/v1/dealer/priceAndInventories/search" (RelFrameId=1, Internal ID=2)
+Action.c(25):     a\r\n
+Action.c(25): t=3471ms: 7-byte chunked response overhead for "https://api-performance.cat.com/rde/dealerSalesModels/v1/dealer/priceAndInventories/search" (RelFrameId=1, Internal ID=2)
+Action.c(25):     \r\n
+Action.c(25):     1b8\r\n
+Action.c(25): t=3471ms: 7-byte chunked response overhead for "https://api-performance.cat.com/rde/dealerSalesModels/v1/dealer/priceAndInventories/search" (RelFrameId=1, Internal ID=2)
+Action.c(25):     \r\n
+Action.c(25):     0\r\n
+Action.c(25):     \r\n
+Action.c(25): t=3471ms: 450-byte ENCODED response body received for "https://api-performance.cat.com/rde/dealerSalesModels/v1/dealer/priceAndInventories/search" (RelFrameId=1, Internal ID=2)
+Action.c(25): t=3471ms: 1810-byte DECODED response body for "https://api-performance.cat.com/rde/dealerSalesModels/v1/dealer/priceAndInventories/search" (RelFrameId=1, Internal ID=2)
+Action.c(25):     {\n
+Action.c(25):        "dealerCode" : "H160",\n
+Action.c(25):        "locale" : "en_US",\n
+Action.c(25):        "rdeSalesModels" : [ {\n
+Action.c(25):           "priceAndInventory" : [ {\n
+Action.c(25):              "adjustedDealerPrice" : 0.0,\n
+Action.c(25):              "adjustedSTPrice" : 82990.0,\n
+Action.c(25):              "configEnabledBy" : "ST",\n
+Action.c(25):              "currency" : "USD",\n
+Action.c(25):              "dealerPrice" : 0.0,\n
+Action.c(25):              "dnetPrice" : 69478.0,\n
+Action.c(25):              "inventoryAvailabilityData" : "Low",\n
+Action.c(25):              "inventoryAvailabilityDescription" : "Contact Dealer",\n
+Action.c(25):              "listPrice" : 96497.0,\n
+Action.c(25):              "msrpPrice" : 79128.0,\n
+Action.c(25):              "rdeConfigId" : "255255DC2B030C1767803939540",\n
+Action.c(25):              "rdeName" : "Shop 255 Cab Core DCA 2",\n
+Action.c(25):              "shopName" : "255 Cab Core",\n
+Action.c(25):              "shopSubTitle" : "Standard Flow"\n
+Action.c(25):           }, {\n
+Action.c(25):              "adjustedDealerPrice" : 0.0,\n
+Action.c(25):              "configEnabledBy" : "ST",\n
+Action.c(25):              "currency" : "USD",\n
+Action.c(25):              "dealerPrice" : 0.0,\n
+Action.c(25):              "dnetPrice" : 74288.0,\n
+Action.c(25):              "inventoryAvailabilityData" : "Low",\n
+Action.c(25):              "inventoryAvailabilityDescription" : "Contact Dealer",\n
+Action.c(25):              "listPrice" : 103177.0,\n
+Action.c(25):              "msrpPrice" : 84606.0,\n
+Action.c(25):              "rdeConfigId" : "255255DC4D030C1767803984938",\n
+Action.c(25):              "rdeName" : "Shop 255 Cab Pro DCA 4",\n
+Action.c(25):              "shopName" : "255 Cab Pro",\n
+Action.c(25):              "shopSubTitle" : "Standard Flow"\n
+Action.c(25):           }, {\n
+Action.c(25):              "adjustedDealerPrice" : 0.0,\n
+Action.c(25):              "configEnabledBy" : "ST",\n
+Action.c(25):              "currency" : "USD",\n
+Action.c(25):              "dealerPrice" : 0.0,\n
+Action.c(25):              "dnetPrice" : 64870.0,\n
+Action.c(25):              "inventoryAvailabilityData" : "Low",\n
+Action.c(25):              "inventoryAvailabilityDescription" : "Contact Dealer",\n
+Action.c(25):              "listPrice" : 90097.0,\n
+Action.c(25):              "msrpPrice" : 73880.0,\n
+Action.c(25):              "rdeConfigId" : "255255DC1C030C1767803885526",\n
+Action.c(25):              "rdeName" : "Shop 255 Can Core DCA 1",\n
+Action.c(25):              "shopName" : "255 Canopy Core",\n
+Action.c(25):              "shopSubTitle" : "Standard Flow"\n
+Action.c(25):           } ],\n
+Action.c(25):           "rdeSalesModel" : "255"\n
+Action.c(25):        } ],\n
+Action.c(25):        "region" : "ADSD-N"\n
+Action.c(25):     }
+Action.c(25): HTML parsing not performed for Content-Type "application/json" ("ParseHtmlContentType" Runtime Setting is "TEXT"). URL="https://api-performance.cat.com/rde/dealerSalesModels/v1/dealer/priceAndInventories/search"  	[MsgId: MMSG-26547]
+Action.c(25): t=3474ms: Request done "https://api-performance.cat.com/rde/dealerSalesModels/v1/dealer/priceAndInventories/search"  	[MsgId: MMSG-26000]
+Action.c(25): web_custom_request("ActualPriceAPI") was successful, 450 body bytes, 1165 header bytes, 17 chunking overhead bytes  	[MsgId: MMSG-26385]
+Ending action Action.
+Ending iteration 1.
+Ending Vuser...
+Starting action vuser_end.
+Ending action vuser_end.
+Vuser Terminated.
+t=3518ms: Closed connection [0] to api-performance.cat.com:443 after completing 1 request(s)  	[MsgId: MMSG-26000]

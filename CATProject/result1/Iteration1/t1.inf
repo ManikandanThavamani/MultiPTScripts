@@ -1,0 +1,13 @@
+[t1]
+SnapshotXmlFile=snapshot_1.xml
+ContentType=application/json
+StepName=Submit Data: Authorization
+Total=1
+FileName1=t1.json
+RequestHeaderFile=t1_RequestHeader.txt
+ResponseHeaderFile=t1_ResponseHeader.txt
+RawStepEndTime=1779166003527
+RawStepName=Authorization
+RequestBodyFile=t1_RequestBody.txt
+RawStepStartTime=1779166002231
+URL1=file:

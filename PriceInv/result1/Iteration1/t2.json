@@ -1,0 +1,52 @@
+{
+   "dealerCode" : "H160",
+   "locale" : "en_US",
+   "rdeSalesModels" : [ {
+      "priceAndInventory" : [ {
+         "adjustedDealerPrice" : 0.0,
+         "adjustedSTPrice" : 82990.0,
+         "configEnabledBy" : "ST",
+         "currency" : "USD",
+         "dealerPrice" : 0.0,
+         "dnetPrice" : 69478.0,
+         "inventoryAvailabilityData" : "Low",
+         "inventoryAvailabilityDescription" : "Contact Dealer",
+         "listPrice" : 96497.0,
+         "msrpPrice" : 79128.0,
+         "rdeConfigId" : "255255DC2B030C1767803939540",
+         "rdeName" : "Shop 255 Cab Core DCA 2",
+         "shopName" : "255 Cab Core",
+         "shopSubTitle" : "Standard Flow"
+      }, {
+         "adjustedDealerPrice" : 0.0,
+         "configEnabledBy" : "ST",
+         "currency" : "USD",
+         "dealerPrice" : 0.0,
+         "dnetPrice" : 74288.0,
+         "inventoryAvailabilityData" : "Low",
+         "inventoryAvailabilityDescription" : "Contact Dealer",
+         "listPrice" : 103177.0,
+         "msrpPrice" : 84606.0,
+         "rdeConfigId" : "255255DC4D030C1767803984938",
+         "rdeName" : "Shop 255 Cab Pro DCA 4",
+         "shopName" : "255 Cab Pro",
+         "shopSubTitle" : "Standard Flow"
+      }, {
+         "adjustedDealerPrice" : 0.0,
+         "configEnabledBy" : "ST",
+         "currency" : "USD",
+         "dealerPrice" : 0.0,
+         "dnetPrice" : 64870.0,
+         "inventoryAvailabilityData" : "Low",
+         "inventoryAvailabilityDescription" : "Contact Dealer",
+         "listPrice" : 90097.0,
+         "msrpPrice" : 73880.0,
+         "rdeConfigId" : "255255DC1C030C1767803885526",
+         "rdeName" : "Shop 255 Can Core DCA 1",
+         "shopName" : "255 Canopy Core",
+         "shopSubTitle" : "Standard Flow"
+      } ],
+      "rdeSalesModel" : "255"
+   } ],
+   "region" : "ADSD-N"
+}

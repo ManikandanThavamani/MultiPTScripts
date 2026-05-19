@@ -1,0 +1,45 @@
+*.sdf
+combined_*.c
+ThumbnailsCache.tmp
+*.bak
+pre_cci.c
+*.ci
+*.idx
+*.c.pickle
+mdrv_cmd.txt
+options.txt
+
+# LoadRunner / VuGen specific ignores
+
+# Results and logs
+result/*
+*.log
+*.tmp
+*.bak
+*.err
+*.out
+
+# Intermediate files
+*.idx
+*.dat
+*.dmp
+*.rpt
+*.prm
+*.cfg
+
+# Backup and autosave
+*.old
+*.sav
+*.backup
+
+# Controller artifacts
+*.eve
+*.mdb
+*.db
+*.res
+*.zip
+
+# Windows junk
+Thumbs.db
+Desktop.ini
+
